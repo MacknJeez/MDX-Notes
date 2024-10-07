@@ -1,4 +1,4 @@
-Application Layer
+"Application Layer
 
 Top most layer of OSI model / TCP model / Internet Model
 
@@ -27,3 +27,23 @@ Thin Client vs Thick Client
 
 Thin Clients are when the lcient side is not involved in any processing, usually just an interface to access server, the server does the heavy lifting. eg. chatGPT, web interfaces for mails 
 If you have outlook on your device, then it becomes a Thick Client, as the client is also involved in processing (eg. you can still see your emails if you're not connected to the internet)
+
+2 tier architecture - client and server
+3 tier architecture - add another layer of server, eg. client + server + database
+
+
+Cloud Computing Architecture
+
+Most of the services are being handled on the cloud. IaaS, PaaS, SaaS (eg online office 365)
+
+SaaS
+Multitenancy, everyone shares copy of same application (each machine has parititoned data from main server(s), so each machine doesn't have to run an instance of the software), very little control over hardware
+
+PaaS
+You get an env, where you have access to a dev platform (usually in POV of developers), the actual specifications of the servers is not the importance of the service.
+Suited for companies that plan to develop
+
+IaaS
+Compute and Storage is provided, what region of the world it runs in, you can manage the infrastructure of the systems (eg. on this VM i want a linux system) but underlying hardware is still with the datacenters.
+
+
