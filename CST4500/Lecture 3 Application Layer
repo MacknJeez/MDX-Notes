@@ -101,8 +101,11 @@ The server tells you what type of content is being sent back to hosts so that th
 
 
 
-
-
+Web Caches
+Goal is to speed up the response of client's request, cuts out the step of request going all the way to the end server. Reduces Delay, reduces load on the main server.
+Acts as a proxy server, acts on behalf of server if it has the data, acts on behalf of client if it needs to request data from main server. 
+Server decides if web cache can be stored (for PII or SPII), and for how long (because content can be outdated after too long)
+There's a lot of internet web caches, so "poor" service providers can still provide content consistently
 
 
 
