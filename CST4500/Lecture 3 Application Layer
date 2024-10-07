@@ -33,7 +33,6 @@ If you have outlook on your device, then it becomes a Thick Client, as the clien
 
 
 Cloud Computing Architecture
-
 Most of the services are being handled on the cloud. IaaS, PaaS, SaaS (eg online office 365)
 
 SaaS
@@ -109,8 +108,9 @@ There's a lot of internet web caches, so "poor" service providers can still prov
 
 
 
-
-
+Electronic Mail Services
+SMTP works from sender to email server, server to other server using SMTP, reciever uses POP3 or IMAP to retrieve messages
+POP deletes messages from server but stores on client, IMAP keeps a copy on the server 
 
 
 
