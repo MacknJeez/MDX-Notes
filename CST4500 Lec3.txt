@@ -22,3 +22,8 @@ Processes Communincating
 eg kernel process??, printing process requested by an app
 eg for processes on different devices: 2fa (by authenticator or something), client browser and server hosting the browser with whatever information on the browser
 
+
+Thin Client vs Thick Client
+
+Thin Clients are when the lcient side is not involved in any processing, usually just an interface to access server, the server does the heavy lifting. eg. chatGPT, web interfaces for mails 
+If you have outlook on your device, then it becomes a Thick Client, as the client is also involved in processing (eg. you can still see your emails if you're not connected to the internet)
