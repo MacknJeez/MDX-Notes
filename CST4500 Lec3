@@ -1,0 +1,17 @@
+Application Layer
+
+Top most layer of OSI model / TCP model / Internet Model
+
+Client Server Architecture
+Client Server paradigm key concept: One central server(host), job is to process incoming requests. Client cannot operate independently, always request data from server.
+Resides in any type of network (insitute, home, enterprise etc.) 
+Cleints do not talk to each other directly, happens via server. 
+Scalable: Just make bigger server
+
+P2P Architecture
+Each host is equal, each host can play role of client or server. (eg. BitTorrent etc)
+Services are distributed, clients talk to each other directly. 
+No Always on server, clients come and go. (dynamic network env)
+Main challenge with p2p scalability: 
+  since it's not always on, scalanility means to be able to grow the network, since devices are not always on, possible that services might not be available "Self scalabiity"
+  Management of such networks is complex
