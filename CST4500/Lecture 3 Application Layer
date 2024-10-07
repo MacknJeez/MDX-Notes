@@ -1,4 +1,4 @@
-"Application Layer
+Application Layer
 
 Top most layer of OSI model / TCP model / Internet Model
 
@@ -75,6 +75,40 @@ Based on Security
 Some Transport Protocols:
 TCP: Reliable, has control over flow of data to not overflow the reciever, makes sure the network is not congested, makes sure data can be recieved (handshake)
     Does not have: no Security, When the data can be delivered, minimum throughpuut guarantee
+    In games, the chat can be done by TCP
 
 UDP: Not Reliable, doesn't really have anything, just sends data regardless of whether it's being recieved properly (eg. video calling), it's v fast cuz no handshake required between sender and reciever
     To get some level of reilability from UDP, as a developer you need to put a mechanism on the Application layer.
+    In games, player movements can be done by UDP cuz fastness is good
+
+
+Securing TCP
+Security was an afterthough for these protocols. There is no encryption, all data sent in plaintext.
+
+Transport Layer Security (TLS) is implemented on Application layer by developers.
+TLS lib takes content, encrypts and sends through socket.
+
+
+Web and HTTP
+HTTP uses port 80
+By default, HTTP is stateless: doesn't store any state information on it's own, so if you go from one web page to another, it won't remember that you are the same person from the previous page. 
+Cookies are used for this purpose.
+
+
+Inside HTTP Request and Response:
+When you click on a hyperlink, the response looks like (An example of a Response from a web browser Using HTTP, Lec 3 PPT)
+The server tells you what type of content is being sent back to hosts so that the host knows how to render the data properly. (in the content line)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
