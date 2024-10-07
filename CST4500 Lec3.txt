@@ -1,4 +1,4 @@
-#Application Layer
+Application Layer
 
 Top most layer of OSI model / TCP model / Internet Model
 
@@ -19,6 +19,6 @@ Main challenge with p2p scalability:
 
 Processes Communincating
 
-eg kernel process??, printing process requested by an app 
-
+eg kernel process??, printing process requested by an app
 eg for processes on different devices: 2fa (by authenticator or something), client browser and server hosting the browser with whatever information on the browser
+
