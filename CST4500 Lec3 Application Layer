@@ -45,5 +45,37 @@ Suited for companies that plan to develop
 
 IaaS
 Compute and Storage is provided, what region of the world it runs in, you can manage the infrastructure of the systems (eg. on this VM i want a linux system) but underlying hardware is still with the datacenters.
+In the long run, it's better for cost as you're outsourcing the hardware. The cloud provider is responsible for upgrading.
+Great for scalability, as load increasing, the capacity can be changed very easily. (eg. you have 5 VMs, you get more load, tell them to give you 10 VMs)
 
+
+
+Processes Communicating Contd. 
+
+Sockets is a way of how the OS can use the underlying network. (kinda like a door)
+The Application should be able to send a message, just use socket. The network takes care of the rest.
+
+
+An application-layer protocol defines: 
+what kind of messages can be exchanged
+how do the messages look like, what the structure of the emessages are (eg. in email, which part is from, to, cc, message etc)
+what does the message mean
+
+Open Protocols: HTTP, SMTP
+PRprietary Protocols: Skype, Zoom
+
+note: transport layer is to make sure the info gets to the right application within devices
+
+What transport service does an app need?
+Based on how reliable the data needs to be, the appropriate transport layer protocol is chosen
+Based on how little delay is needed, " "
+Based on minimum throughput (eg. multimedia), " "
+Based on Security
+
+Some Transport Protocols:
+TCP: Reliable, has control over flow of data to not overflow the reciever, makes sure the network is not congested, makes sure data can be recieved (handshake)
+    Does not have: no Security, When the data can be delivered, minimum throughpuut guarantee
+
+UDP: Not Reliable, doesn't really have anything, just sends data regardless of whether it's being recieved properly (eg. video calling), it's v fast cuz no handshake required between sender and reciever
+    To get some level of reilability from UDP, as a developer you need to put a mechanism on the Application layer.
 
