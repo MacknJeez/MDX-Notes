@@ -1,0 +1,66 @@
+Every process has it's own address space to hold process image (data about process etc)
+Processes follow an execution path
+These two characterisitics are treated independently by the operating system.
+
+Unit of Dispatching ---> Thread/Lightweight process (what is executed by the processor, sequence of instructions, smallest unit of execution)
+Unit of Resource ownership ---> Process/Task (What owns the resource)
+
+Processes have states, priority etc.
+
+The processor runs a thread (that's why it's called a unit of dispatching), so when there is an app, it should have a process, 
+which must have atleast one thread called primary thread. (If a process has ZERO threads, then the process cannot exist)
+
+There can be multiple threads in a process also, called multithreading.
+
+A thread always belongs to a process (cannot exist outside a process)
+
+
+UNIX can only do multiple processes, not multithreading, but windows can do multiprocesses that have multiple threads. (check figure 4.1 and 4.2 if confused, lecture 4)
+
+In fig 4.2, user address space is where the process resides, threads share the resources of the process (occupies the same address space, and shares all other resources like IO, files etc.
+In fig 4.2, multiple thread control blocks are needed, because sometimes if one thread might be running, but another might want to be used. 
+
+At any point of time, a thread can have:
+-an execution state (ready, running, block etc)
+-has an execution stack (because threads share the resources of the process)
+
+Browsers use multithreading (let's say each tab is another thread), spreadsheet application (one thread can be used for user input, another can be used for commands, third thread is for displaying menu)
+
+Multithreading improves responsiveness
+
+Web servers are designed as multithreaded, so each client can be handled individually, immediately, independently. 
+
+
+
+Benefits of Threads:
+Faster to switch between threads compared to process
+faster to terminate threads
+faster to make new threads also
+
+
+Use of Threads in a single-user Multiprocessing System:
+Increases percieved speed of application                             note: if you have 1 core, and an app that is multithreaded. the CPU switches between threads, at the process level it schedules the threads within the processes, 
+                                                                            along with priority scheduling of the processes itself 
+
+When you suspend a process, it suspends all threads within the process. 
+When you kill a process, it kills all threads within the process.
+
+
+Thread States
+Spawn (new process -> new thread)
+Block 
+Unblock 
+Finish
+
+
+Remote Procedure Call (RPC):
+Remote Comms protocol to request service in program located in another system (calling functions in one code from another code or library or class basically)
+Procedures have to exist is two different address spaces (can be on same host or two different hosts)
+
+RPC using Threads:
+Figure 4.3, 
+
+
+
+
+
