@@ -57,8 +57,43 @@ Remote Procedure Call (RPC):
 Remote Comms protocol to request service in program located in another system (calling functions in one code from another code or library or class basically)
 Procedures have to exist is two different address spaces (can be on same host or two different hosts)
 
-RPC using Threads:
-Figure 4.3, 
+RPC using Threads: 
+(Uni Processors Example)
+Figure 4.3 a, One Primary thread using RPC, you can also make it two threads handling the two requests at the same time. Speeds up the application. (becomes fig4.3 b)
+In Figure 4.3 b, both threads are in blocked state, Processor switches to first thread, runs for a bit, then blocks so the second thread can complete, then unblocks to run the primary thread, finishing the full task.
+It does all that because it's a uniproc, so it has to balance the resources between the two threads. If it was a multiprocessor, it could run both threads simultaneously 
+
+
+User-Level Threads:
+Managed by user-level libraries or APIs (like python, java have their own functions for multithreading)
+All tasks of THREAD managements is done by user libraries, the OS just makes the processes. Kernel doesn't know about the threads that exist, 
+Limitations of ULT approach can be:
+If kernet doesn't know about the threads, there is no real benefit for making the threads from the kernel's side. It depends on what kind of scheduling is used by the developer.
+If one thread is ready or blocked, the entire process is made ready or blocked, even if other threads in the process are not ready or not blocked.
+
+Kernel-Level Threads:
+THe kernel recognizes the threads, you just need an APi for the kernel threading stuff.
+With KLT approach, the limitations of ULT are dealt with. Also if the kernel can schedule two threads, on two different processes (on a multitprocessor)
+
+Combined Approach:
+Both ULT and KLT are used.                                                                               (DOUBT so what's the point of ULT if it's just completely worse than KLT? Why have a conbined approach at all?)
+Figure 4.6
+
+
+
+Categories of Computer Systems:
+it's a framework, aka FLynn's Taxonomy (gives idea of how computer architecture has evolved based on the instruction prcessing capabilities of the systems)
+
+4 Main Models:
+SISD (traditional, sequential processing/computing)
+SIMD (Parallel computing, each unit executes same instructions on multiple data points eg vector processing, 
+
+
+
+
+
+
+
 
 
 
