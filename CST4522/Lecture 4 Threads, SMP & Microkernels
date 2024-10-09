@@ -76,8 +76,11 @@ THe kernel recognizes the threads, you just need an APi for the kernel threading
 With KLT approach, the limitations of ULT are dealt with. Also if the kernel can schedule two threads, on two different processes (on a multitprocessor)
 
 Combined Approach:
-Both ULT and KLT are used.                                                                               (DOUBT so what's the point of ULT if it's just completely worse than KLT? Why have a conbined approach at all?)
-Figure 4.6
+Both ULT and KLT are used.                                                                               (DOUBT so what's the point of ULT if it's just completely worse than KLT? Why have a conbined approach at all?
+Figure 4.6                                                                                                It's because in the start, ULT was all there was, many OS didn't have Kernel Level multithreading. 
+                                                                                                          Nowadays, it's mostly just the combined approach anyway.
+                                                                                                          It still exists incase the system or OS doesn't support kernel level, sort of like a legacy thing. Maybe some embedded or low power systems use it?)
+
 
 
 
