@@ -86,7 +86,50 @@ it's a framework, aka FLynn's Taxonomy (gives idea of how computer architecture 
 
 4 Main Models:
 SISD (traditional, sequential processing/computing)
-SIMD (Parallel computing, each unit executes same instructions on multiple data points eg vector processing, 
+SIMD (Parallel computing, each unit executes same instructions on multiple data points 
+      eg vector processing, array of elements A, another array of element B, performing addition of the elements in both arrays
+      used in GPUs also? apparently multiple sets of SIMD 
+MISD (used when security and reliability is needed)
+MIMD (used in parallel architectures, most popular)
+next page for diagram of all 4 types.
+
+Multiprocessor Operating System Design Considerations:
+There should be proper load balancing 
+
+
+MicroKernels and Monolithic Kernels:
+Monolithic kernels have all the features, microkernels have barebone features, enough for the system to run. Microkernels itself are very small. 
+Monolithic kernels are faster, because in microkernels there's an extra layer of communication between the different features that the microkernel doesn't include. 
+But microkernels are most modular, saving on space for embedded systems etc.
+
+
+
+Windows Thread States:
+Ready        }
+Standby      } Running
+Running      }
+
+Waiting      }
+Transition   }Not Runnable
+Terminated   }
+
+
+Case Study: Oracle Solaris
+Uses Three Level Thread management structure (it's how it implements threads)
+ULT, KLT, LightWeightProcess (LWP) inbetween those two [figure 4.15]
+
+
+
+
+
+Do Lecture 4 MCQ on MyMDX
+
+
+
+
+
+
+
 
 
 
