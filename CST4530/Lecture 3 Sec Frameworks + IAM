@@ -35,6 +35,64 @@ you need good CPU, so you can rent on cloud. OR use rainbow tables
 
 
 Credential Stuffing Attack:
+Get password from some attack, try same password somewhere else. That's basically what credential stuffing is, stuffing the credentials everywhere after getting. THIS IS ATTACKER STUFFING THE PASSWORDS
+
+
+When attackers look to attack and get passwords, they want to attack with a big userbase, so they can make the most money. To get max benefits from attack. 
+Eg. if you compromise the website, identity and password(hash) is stolen. So attacker knows the email, figures out the password from the hacked website, and then tries it on the email login of the known email or other websites where the email is used.
+How to mitigate this type of attacks:
+Use password managers, use different password and email logins, use "login via google" etc.
+
+
+Brute Forcing:
+HydraBrute (watch youtube vid for more info)
+Try KaliLinux 
+
+
+Mimikatz
+if you're compromised, attqack installs mimikatz
+it picks up login password from memory (instead of from disk like in HydraBrute)
+
+Easiest way to get passwords: Social Engineering
+then Key Logging (which is apparently a kind of malware also?)
+Then it's the Hammer Approach (beat someone with a hammer to get the password)
+
+
+
+
+Defences Mechanisms and Countermechanisms for Passwords:
+Create passwords that are complex (make a long password, maybe with specific phrases that make sense to you but not to anyone else, easier to remember also, eg. eatAssSleeperTrash69)
+Nice thing about passphrase to the service you're trying to use. so GMAILLOCKSTOCK. 
+OR take a song lyric and translate it to your primary language, the password becomes hard to hack. 
+
+Example for SSO:
+Go to work, put password and you have desktop.
+On the desktop you have a browser, on the browser you have a favourites tab.
+There's your favourite links in the tab, click on them and they all load, no password needed. 
+Because it checks from the ActiveDirectory, which tells the website that oh yeah this is him, let him through. It verifies against the LSASS (local Security System on windows) for example.
+
+Google has something similar, OAuth. Tokens are how long the app stays logged in. So if the token is 15mins TTL, then the service stays logged in for 15 mins and then logged out. 
+eg banking, the token stays alive for 15 mins, for mobile applications it's just forever. So it's also application based. 
+
+
+
+
+Types of Authentication:
+Passwords(something you know)
+Fingerprints/Facial Scans (something you are/who you are)
+Authenticator (something you have)
+Location based (LBAC or ABAC) (where you are)
+Iris (completely unique, 8 billion different Iris')
+Retina 
+
+
+
+
+
+
+
+
+
 
 
 
