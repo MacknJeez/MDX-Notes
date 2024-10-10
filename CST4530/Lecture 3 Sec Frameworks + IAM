@@ -1,0 +1,40 @@
+Learn the framework file that prof sends 
+
+
+
+Base Stations, the SPOF for networks.
+
+
+Scenario For Spoofed Wifi
+MOE_WIFI or MOEWifi
+
+Traffic is being monitored on spoofed wifi. 
+
+
+Identification and Authentication:
+UserID is indentification
+Password is Authentication
+
+How Passwords are stored on OS
+in UNIX, there's a jumbled text that's the actual password, even if it's ABC123, it's stored like 198234y7hiuofqodksjnohbnqj3wrfop
+
+
+Salting is adding random text to passwords to obfuscate data
+
+Dictionary Attacks:
+When you log into a system, you choose a pass. Dictionarypasswords are passwords found in the english dictionary.
+ROCKYOU.txt
+When you initially create a password for the first time, passwords are stored in a datastore (different from database) usually named etc/shadow on UNIX systems
+
+hacker gets your hashvalue-ified password gibberish, runs same hash function on the ROCKYOU.txt and compares the passwordhash to ROCKYOU hash values.
+
+How to know what hash function is used: look at the initial first few values ($6$ is SHA512)
+you need good CPU, so you can rent on cloud. OR use rainbow tables
+
+
+
+
+Credential Stuffing Attack:
+
+
+
