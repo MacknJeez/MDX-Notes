@@ -1,0 +1,55 @@
+Recollecting on last Lecture:
+Two major types of architecture (clientserver and p2p)
+Cloud Architectures (Iaas,Paas,SaaS)
+Protocols (HTTP, SMTP, POP3, IMAP) 
+Protocol defines: what messages can be transferred, what the message looks like (Structure), what the message means
+
+Learning Obj:
+DNS 
+P2P
+Content Distro Nets
+
+
+
+
+DNS (Domain Name System):
+like how people have unique identifiers (passport #, Social Sec No.)
+
+For internet hosts, routers:
+Every internet device has an IP address. (eg. google.com is for our sake, the actual identifier is an IP address)
+
+
+DNS is application layer protocol (like HTTP, SMTP)
+
+
+What DNS actually does:
+hostname-to-IP translation
+host aliasing (canonical and alias names, eg. google is easier to remember instead of some IP address, it might actually be called server1.google.com
+DNS also does load distribution (there can be many queries that are for mapping IPs to aliases, so DNS servers can handle these queries, so it doesn't burden the actual website for the hostname translation)
+
+
+why not just centralize DNS?
+it becomes a SPOF
+traffic through the DNS server overwhelms the server
+not the same distance for everyone, bad user experience cuz delay in loading websites (so diff orgs handle their own records for DNS, ie. decentralized servers)
+
+
+DNS is a distributed structured Heirarchal Database (there's a video, cool looking, explaining DNS quickly)
+So it's distributed based on different handles like .ca, .org etc in the root server. (called top level domain)
+It's then further split on the different websites inside the appropriate DNS servers (amazon.ca DNS server, pbs.org DNS server etc) ie. Authoritative servers (where the names are converted to IP adds and sent back to the devices)
+
+so Root > Top Level Domain > Authoritative 
+
+The problem with this kind of system:
+Every query goes through the root server first and then TLD and then Authoritative servers. You don't want root level to get involved in every query. 
+
+
+
+
+
+
+
+
+
+
+
