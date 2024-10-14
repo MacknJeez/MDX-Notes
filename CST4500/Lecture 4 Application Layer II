@@ -44,6 +44,120 @@ The problem with this kind of system:
 Every query goes through the root server first and then TLD and then Authoritative servers. You don't want root level to get involved in every query. 
 
 
+Root Name servers: 
+Are offial last resors for name servers that cannot resolve names 
+There are 13 major root servers (not only 13 servers, these servers are replicated all over the world for distributed nature)
+Not secure by default, has DNSSEC for security (once you send a request for IP, how do you know that it is a genuine answer and not fake?)
+DNSSEC creates cryptographic sigs on the existing DNS records.\
+
+
+
+Top Level Domain Servers:
+Resp for .com, .org, .net etc
+
+Authoritative DNS servers:
+Orgs' own DNS servers, knows final mapping for the named hosts
+maintained by orgs or service providers
+
+
+
+Local DNS name servers:
+closer to Hosts, faster response because it's stored in it's cache memories (maybe someone else accesses the same website) and if it doesn't exist in it's cache, it forwards the request to the heirarchy
+
+DNS name resolution: Iterated query
+every iteration, the heirarchy sends response back to local DNS server, and moves to another step in heirarchy
+most queries are iterative
+
+DNS name resolution: recursive query
+it goes down the heirarchy, each tier doesn't contact the local dns server
+very time consuming, heavier loads at upper levels of heirarchy
+
+
+
+Caching DNS info:
+improves response time
+these entries have TTLs, so it expires after TTL is over (eg if you want to access google.com, TTL might be 60 mins, so everyone who wants to access the same website can do it quickly for 60 mins)
+problem with this is if that content is updated within that TTL for the cache, the data shown to the user is outdated until TTL is over
+This approach is a Best-Effort translation/services (it tries it's best to do the mapping, it can go wrong sometime)
+
+
+
+Types of DNS records:             (format is Resource Records (RR) :(name, value, type, ttl)
+Type = A:
+name is hostname
+value is IP 
+
+
+type = NS
+name is domain
+value is hostname of authoritative sever (which then gives you the IP)
+
+type = CNAME
+name is alias name for some canonical/real name
+value is canonical name
+
+type = MX
+value is name of SMTP mail server
+
+
+Getting your info into the DNS:
+register name at DNS registrar
+privde names, IP adds of auth servers
+registrar inserts NS and A RRs into TLD servers
+
+
+
+DNS Sercurity:
+DDoS attacks (not successful yet)
+Spoofing attacks
+
+
+
+P2P archictecure: (from last class)
+No always on server
+
+Looking at the BitTorrent protocol:
+files divided into 256kb chunks 
+It's not purely decentralized, there's a central "tracker" that keeps track of peers participating in torrent (ie if they're seeding)
+scenario: alice gets list of peers from tracker, begins exchaning file chunks with peers. Then she gets to know who has the files she needs. (subset within the peers)
+Once peer has entire file, it may leave or remain in torrent (always seed)
+
+
+BitTorrent: Requesting and sending file chunks
+Requesting Chunks: 
+diff peers have different subsets of file chunks
+alice asks each peer for list of chunks they have 
+alice requests missing chunks from peers, rarest first (whichever chunk is available the least among the peers, so it tries to download those chunks first, so more people have it so it's easier to download)
+
+Sending Chunks: (I don't understand this part)
+Alice connects and sends to multiple peers, whoever is sending data at highest rate (top 4)
+Reevaluate every 10 secs the top 4 senders (see who is sending you the data the fastest, every 10 seconds try and reevaluate who is sending the fastest) 
+every 30 secs, randomly select another peer, starts sending chunks (after 10 seconds you notice another person sending faster and then swap the slower with this guy, but there can be a peer who just doesn't send any data because they're choked,
+so they'll get choked forever. So randomly pick another peer, optimistically hope that they're better, to avoid this starvation)
+
+
+
+
+
+Content Distrivbution Networks (CDN):
+Media is probably the most consumed things on the web. Time it takes to stream or download is large. To reduce this, we distribute this content across the world so it's as close as possible to end users. It kinda works as cache servers, but stronger.
+If you have one ultragiga server, it can become a SPOF, increase the load on that single server, it's not the same distance between end users. 
+so that's why CDNs exist.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
