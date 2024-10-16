@@ -13,7 +13,7 @@ When a system is out of actual RAM, the OS makes use of the space available on a
 What is Paging?
 It is the partitioning of physical RAM into fixed sized blocks called Frames. 							PAGE SIZE IS EQUAL TO FRAME SIZE 
 
-Contiguous is basically continuous 
+Contiguous is basically continuous, sequential uninterrupted manner
 
 
 
