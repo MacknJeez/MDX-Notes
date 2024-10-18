@@ -1,1 +1,85 @@
+Slides + Activity + Lab
+
+What is footprinting?
+Process to gather info, to find as much as you can on a target (person, system or network).
+
+
+Footprinting is the first step for hacking and pen testing. 
+
+Some terms:
+Passive and Active info gathering (without and with interacting with targets)
+
+
+Why footprinting?
+Know security posture (how the target reacts to security issues etc.)
+Reduce Attack surface 
+Build Database of info 
+
+
+
+Footprinting Threats:
+Info Leaks
+Privacy loss
+Corporate Espionage
+
+Where can you find information about a target?
+Dark Web duh 
+GO on telegram, some rooms just give away info for free ??? but you need to make sure that it's valid and not BS
+
+
+
+Ways to do Footprinting:
+Fake raffle draws, you put in all your details 
+Cookies (Accept All, Reject All, Accept Essential Only)
+
+Email Footprinting:
+When someone forwards an email, the previous data from original email is lost, so you need to check the original email from the original recipient.
+
+
+
+Competeitive Intelligence:
+Sometimes companies keep older softwares and thus keep older operating systems, like windows 7 or XP. THis is valuable because there's vunerabilities that can't be fixed or hasn't been fixed in that version.
+
+
+
+
+Footprinting with Google Hacking:
+Advanced Google search terms (contains, has etc)
+BAsic operatiers 
+Advanced operators 
+
+
+Activity 1
+Q. What are the primary methods used for father info during the foot printing phase of a pen test, and how can this info be utilized to tindetify potential vulnerabilities?
+Search google for ways to do footprinting 
+
+
+If you find systems in a company that still has outdated servers or infra, that can be a potential attack window
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
