@@ -118,7 +118,7 @@ No always on server
 
 Looking at the BitTorrent protocol:
 files divided into 256kb chunks 
-It's not purely decentralized, there's a central "tracker" that keeps track of peers participating in torrent (ie if they're seeding)
+It's not purely decentralized, there's a central "TRACKER" server that keeps track of peers participating in torrent (ie if they're seeding)
 scenario: alice gets list of peers from tracker, begins exchaning file chunks with peers. Then she gets to know who has the files she needs. (subset within the peers)
 Once peer has entire file, it may leave or remain in torrent (always seed)
 
