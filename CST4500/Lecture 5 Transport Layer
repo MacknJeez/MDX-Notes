@@ -1,0 +1,136 @@
+DNS servers
+Heirarchy (Root, TLS, authoritative)
+Types of queries : recursive and iterative 
+Recalls BitTorrent
+  P2P, tracker servers, peer selection 
+
+
+
+Transport layer is 4th in list if you consider session and presentation layer
+
+
+Transport layer provides logical communication (focus on transmission between different hosts, ignores physical comms like cables and stuff)
+Bsaically on top of the physical connections (like there's a direct connection between the start and end hosts)
+
+It's the first layer where the actual message is broken down into segments, passed onto the network layer. (Segmentation)
+
+
+Two major Transport layer protocols:
+TCP
+UDP
+
+If we look at the network layer, it has it's own functions and it's own challenges, so the transport layer enchances those functions (IP is a best effort service, network layer)
+
+Transport layer ENCHANCES the network layer's functions. It makes sure that delivery happens between the right applications. (eg two tabs on web browser open, 
+                                                                                                                                 each of the tabs needs to get it's own responses,
+                                                                                                                                 the data can't be mixed)
+
+Network layer just delivers as best as it can between the hosts, the tranport layer makes sure that the correct application gets the right data. 
+
+He goes through the transport layer actions, sick ppt animations 
+Demulitplexing (based on the header, it sends it to different applications)
+
+
+Looking at Internet Transport Protocols:
+TCP: 
+It's a connection oriented protocol, reliable and has flow control
+
+UDP:
+Unreliable, basically best effort
+
+
+what's not available in both:
+delay or bandwidth guarantees
+
+
+Multiplexing/Demultplexing
+
+Multiplexing as Sender:
+WHen the sender device (server) every packet sent, there's a header which decices where the packet will go (using IP) to which process
+Demultiplexing as reciever:
+Where does the data go in the system, using the header provided in the data being sent.
+
+Since there's only one way for data to go in or out of a system at any given time, there is a mechanism for figuring out where the data is sent within the system (ie. multiplexing and demultiplexing)
+
+
+How Demultiplexing works:
+How does the machine know where to deliver the data within the machine? Port Numbers                             doubt : where somethign accesses the same port at the same time (eg broswer tabs), how does it know which data goes where?
+at the network layer, there's the IP address 
+
+SOCKETS are a way for OS' to know how to communicate using the network (end point to connect the application to the TCP/IP stack and use that to communicate over the network)
+It's a way for programmers to connect to the TCP/IP stack, without having to know how the data is actually transmitted technically
+
+
+
+User Datagram Protocol (UDP):
+UDP  is connectionless in nature (before sending data, it does not make sure if there's a connection established (logical connection))
+Packets can be lost or can arrive out of order.
+
+If a single open port on the server, it handles the incoming connections from all clients FOR UDP (since it doesn't make sure if there's an available connection open)
+Single socket to handle all connections
+data might arrive out of order, or just lost completely
+UDP has no mechanism to put the packets back in order
+More suited for certain applications 
+Lightweight protocol compared to TCP ie. header or whatever else being added onto the data being sent across is lower (since it's barebones and no reliability)
+Why used for Media transfer or streaming? Because a lost packet means a frame dropped while streaming. If used for emails, then lost packets means significant change in message sent across.
+
+How does it know where to send the data if there's only one port open on the server? 
+Source Port and Source IP (destination IP and destination port is same, it goes through the same port)
+
+DOUBT: What is the checksum bits in the UDP header for?
+Error checking mechanism (check if bits are flipped during transmission) but if it's an unreliable protocol, why does it need it?
+Because without the checksum, the reciever can't make sure the data it actually recieved is the right data. UDP doesn't make sure if data reaches but the reciever can make sure if the data is the right one.
+(solves security issue)
+
+Checksums in UDP:
+Looks at the segment, breaks it down into 16 bit segments, adds (one's compliment of binary addition of the 16 bit segments)
+
+010100101010010101001101001 -> 0101001010100101 0101001010100101
+
+Split into 16 bit segments, binary add, if carry over then take carry and add to last bit in sum, take 1's complimenet and that becomes the checksum. 
+Reciever does the same thing, calculates checksum and compares with received checksum and if they match; if same then data recieved is right 
+
+
+TCP
+TCP is a connection based protocol, so it sets up a connection and then sends the data across (using source IP + port number, dest IP + port number)
+So every client opens a new port for comms (on server), when a request to make a connection is sent from the client to the server.
+New socket for all connections, the system has to allocate some resources for that  (what resources are allocated for opening a new socket?)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
