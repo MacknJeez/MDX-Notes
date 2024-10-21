@@ -134,7 +134,7 @@ Alice connects and sends to multiple peers, whoever is sending data at highest r
 Reevaluate every 10 secs the top 4 senders (see who is sending you the data the fastest, every 10 seconds try and reevaluate who is sending the fastest) 
 every 30 secs, randomly select another peer, starts sending chunks (after 10 seconds you notice another person sending faster and then swap the slower with this guy, but there can be a peer who just doesn't send any data because they're choked,
 so they'll get choked forever. So randomly pick another peer, optimistically hope that they're better, to avoid this starvation)
-
+If they keep the same top 4 list, other peers will get choked and eventually starved of communication or transmission
 
 
 
