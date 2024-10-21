@@ -89,6 +89,9 @@ Looks at the segment, breaks it down into 16 bit segments, adds (one's complimen
 
 Split into 16 bit segments, binary add, if carry over then take carry and add to last bit in sum, take 1's complimenet and that becomes the checksum. 
 Reciever does the same thing, calculates checksum and compares with received checksum and if they match; if same then data recieved is right 
+It's a weak protection, if the last two bits of segments get changed together, the system won't catch it.
+Why is 1's complimenet used? https://www.quora.com/Why-is-it-that-UDP-takes-the-1s-complement-of-the-sum-that-is-why-not-just-use-the-sum
+
 
 
 TCP
@@ -96,8 +99,31 @@ TCP is a connection based protocol, so it sets up a connection and then sends th
 So every client opens a new port for comms (on server), when a request to make a connection is sent from the client to the server.
 New socket for all connections, the system has to allocate some resources for that  (what resources are allocated for opening a new socket?)
 
+Receive Window:
+used for flow control, tells the server that the client is willing to send eg. 5000 bytes (so recieve window is 5000). This can change in each segment 
+Data is sent in the same way, there's a possibility that the data is transferred in jumbled protocol. It is reliable so it has ways of making sure the data is put back together the right way at the end.
+Congestion Control:
+for handling congestion in the network itself, as opposed to the host or client itself (like in receive window)
+Implicit mechanism, sees if ACK takes longer than usual, if yes then congestion. 
 
+Handshaking (three way handshake, Client to Server SYN, Server to Client ACK,SYN, Client to Server ACK)
 
+TCP sequence numbers:
+here, 42 means the first data in the message is byte 42. let's say the data sent across is 100 bytes, so 42-141. Next message started from 142 (ie. ACK number is previous SEQ number + no. of bytes + 1). 
+This is how it keeps track of the data sent, and what order.
+
+eg. if 4 packets are sent across, and the first one is received and ACKed by the receiver:
+If the second one is sent, it will acknowledge that the second one was receieved
+If third one is lost then it will not send acknowledgement (because nothing to respond to)
+If fourth one is sent, then it will not send acknowledgement (because sequence would be lost if 4th one was received before 3rd one)
+
+Sender has to wait for certain amount of time waiting for acknowledgement
+How to set TCP timeout value?
+Longer than Round Trip Time (but RTT's not fixed)
+Too short, before the ack is recieved, timeout is done so assumed packet lost
+Too long, why wait for longer than needed?
+
+so there's a formula in ppt for calculating the Timeout using estimated RTT as it's not fixed every time. (how often is it calculated? does it need to be calculated every time?)
 
 
 
