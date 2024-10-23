@@ -1,5 +1,7 @@
 What are some of the main functions performed by the OS?
 Process, Threads 
+Process address space = set of mem address space assigned to a process in the RAM
+
 
 
 Input and Output operations.
@@ -47,6 +49,56 @@ When a process issues r/w command:
 With all that done, the DMA command is setup, CPU will do some other task, and the DMA will do it's thing and bypass the CPU, and then send an interrupt to the CPU once it's finished.
 
 The DMA logic can be either built into the I/O device, or the DMA might control multiple I/O devices. 
+
+
+Operating System Design Issues:
+Can use multiprogramming to have a set of ready processes to keep CPU busy for some time. (not 100% use, but maybe 60-70% for embedded systems)
+The objective is always to make the I/O device should be easily accessible to all processes. (generality)
+
+
+Types of I/O Devices:
+
+Block Oriented:
+  Info stored in fixed sized blocks (used for disks)
+
+Stream Oriented:
+  Resp for data exchange in units of bytes or characters (keyboards, mouse etc)
+
+
+
+IO Buffering:
+Temp store data in buffer (sysMem) that passes between prcocessor and a peripheral (usually to smooth out difference in rates of data exchange)
+
+Why buffering?
+  To deal with speed mismatch between producer and consumer of data
+  Certain pages must remain in MainMem during I/O (during the I/O request) 
+
+
+Synchronous vs Asynchronous I/O operations:
+
+Synchronous I/O
+  When a process has requested for an I/O op, the thread has to wait until the I/O operation is complete.
+Asynchronous I/O
+  Process will not wait for the I/O op to complete. So the thread can continue with other work while it waits for I/O (eg. if subsequent process doesn't depend on the previous process' I/O data)
+
+
+Buffering Schemes:          (buffer = portion of MainMem)
+
+  Single Buffer:            (figure 11.6)
+    Simplest Type
+    One buffer assigned to particular process 
+    
+  
+
+
+
+
+
+
+
+
+
+
 
 
 
