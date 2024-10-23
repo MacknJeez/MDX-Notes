@@ -27,3 +27,38 @@ Programmed I/O:
 Interrupt Driven I/O:
   Similar to programmed I/O, but the CPU won't remain in a status checking cycle. The CPU will perform another task, once interrupt is sent then I/O operation happens. 
 
+Direct Memory Access (DMA)
+  The DMA module controls exchange of data between main mem and I/O device
+
+
+
+
+DMA:
+Feature of the systems to directly allow the subsystem to access the RAM independently of the CPU 
+Overall objective of DMA is to bypass CPU for IP operation.
+
+When a process issues r/w command:
+  it issues DMA command
+  whether r or w 
+  address of I/O device involved
+  Starting location of memory to r or w from
+  The no of words to be r or w 
+
+With all that done, the DMA command is setup, CPU will do some other task, and the DMA will do it's thing and bypass the CPU, and then send an interrupt to the CPU once it's finished.
+
+The DMA logic can be either built into the I/O device, or the DMA might control multiple I/O devices. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
