@@ -81,14 +81,27 @@ Synchronous I/O
 Asynchronous I/O
   Process will not wait for the I/O op to complete. So the thread can continue with other work while it waits for I/O (eg. if subsequent process doesn't depend on the previous process' I/O data)
 
-
-Buffering Schemes:          (buffer = portion of MainMem)
-
-  Single Buffer:            (figure 11.6)
+(buffer = portion of MainMem)
+Buffering Schemes:          
+  Single Buffer:                                                            (figure 11.6)
     Simplest Type
     One buffer assigned to particular process 
+
+    Advantage of Single Buffer:
+      read from ppt 
     
-  
+    Disadvantage of Single Buffer:
+      Same as all buffering, there's an buffer overhead added to the system
+      only one chunk of data can be in buffer at a time
+
+
+  Double Buffer:
+    Fixes the one chunk at a time limit of single buffer 
+    but if process is doing a lot of I/O, then you end up needing more buffering
+
+  Circular Buffer:
+    More than two buffers used
+    FIFO replacement of chunks in buffers
 
 
 
