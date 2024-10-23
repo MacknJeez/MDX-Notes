@@ -105,17 +105,62 @@ Buffering Schemes:
 
 
 
+Disk Scheduling:
+Scheduling the I/O requests that arrive to the disk
+
+FIFO (sequentially, fair to all processes, can lead to slow downs)
+Priority (not to optimize but to meet priority requests of individual processes)
+LIFO (most request request, possible starvation as maybe a process just never gets done)
+Shortest Service Time First (SSTF) (based on the least movement of the disk arm from current position ie. seek time)
+SCAN (arm will move in one directions, satisfy everything it can, and then move backwards AKA Elevator Policy) (biased towards area that is most recently travelled
+[the same floor visited right before it starts going backwards])
+
+FSCAN (can be multiple I/O scan ops, all the requests are put in one of the queues, and the other queue is empty. once request is done, it's put into other queue)
+N-step-SCAN (same but multiple queues instead of 2)
 
 
+Algorithm Comparisons:
+eg. disk with 200 tracks, requested tracks are (given in ppt)
+check answer in ppt, there's a blue table
+How to compare these 4 algos?
+  add all tracks traversed (take where it's at and where it needs to go, and subtract. use the next track accessed and subtract from previous track accessed and you get the next no. of tracks traversed)
+  Consider the track locations for all the algorithms 
+  SSTF seems to have lowest seek time
+  Pretty close to SCAN
+
+  Most commonly used is SSTF and SCAN, but it depends on the use case. 
 
 
+Honestly just read the PPTs for this part of the topic sigh
+Redundant Array of Independent Disks (RAID):
+Redundancy System for Disks, to make redundant copies of data, if one or more gets lost, then the data is not completely gone (based on the type of RAID)
+
+RAID Principles:
+  Parity is a way of distributing the data across the drives, so a parity drive that can recreate the data lost in the dead drive
+  Mirroring is juts keeping a copy of x number of drives in case of failure 
 
 
+RAID 0:
+  No redundancy but increased performance (better read write operations) by making one drive out of multiple drives 
+  For non critical storage as no redundancy (full storage is available to you)
+  Best paired with RAID 1
+
+RAID 1:
+  Has redundancy
+  Has mirroring 
+  minimum two drives required
+  half the storage available (other half is mirror of first drive)
+  Double the read performance, same write performance 
+
+RAID 2:
+  hamming code 
+  not used too often 
+  no of disks req to store ECC is directly prop to log od number of disks
 
 
-
-
-
+RAID 3:
+  Supports parity 
+  One disk for parity info 
 
 
 
