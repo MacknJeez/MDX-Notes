@@ -1,0 +1,29 @@
+What are some of the main functions performed by the OS?
+Process, Threads 
+
+
+Input and Output operations.
+How the OS does IO management. (any data exchange operation that happens between computing system and external env. 
+
+Catgories of I/O Devices:
+HUman Readable (users can interact with. eg. keyboards, printers, mouse)
+Machine Readable (ones that comm data in a format that can be understood by the computing system without human input)
+Comms Devices (enable transmission of data between computing systems or between computing systems and larger networks)
+
+
+Differences in I/O Devices:
+Data Rate 
+Application (or Use Case)
+Unit of Transfer (bytes or characters, larger blocks like disks) (keyboard/mouse are character oriented devices, disks are characterized as block oriented devices)
+Error Conditions (how the conditions are handles or responded to)
+
+
+
+Organization of the I/O Functions:
+
+Programmed I/O:
+  The process will send a request for I/O, usually for resource constrained or low speed devices
+
+Interrupt Driven I/O:
+  Similar to programmed I/O, but the CPU won't remain in a status checking cycle. The CPU will perform another task, once interrupt is sent then I/O operation happens. 
+
