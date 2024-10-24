@@ -1,0 +1,33 @@
+Let's say you are a sec architect and you need to give a recomm for installing a new OS and securing:
+Install the OS 
+Apply Security patches (can automate, connect to patching server)
+Benchmarks (CIS) (implements security defaults) 
+  usually L1 is good enough
+  L2, application might break 
+
+He shows us Services.msc and tells us to check what every service does 
+Feature Rich (you might not need it, but it starts on startup so it's harder to secure)
+"Does my org need this service?" If no, then service should be off 
+
+How do you decide which service is good or bad?
+Using the CIS Benchmarks (he opens CIS Ubuntu Linux benchmark pdf)
+You only need one, it's a great help to have 
+
+
+Basic OS Hardening:
+"I'm installing an Win11 Ent OS on my org system, give me top 5 steps."
+Only install/enable what you require (keep it minimal)
+  he gives example of enabling Internet Information Services in Windows Features (Reference monitor checks if it's on, and who can make changes to this setting)
+Disable unnesscesary services 
+
+
+
+
+
+
+
+
+
+
+
+
