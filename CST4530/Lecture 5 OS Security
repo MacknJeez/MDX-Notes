@@ -24,6 +24,49 @@ Configure Privileges (windows via group policies in activedirectory, linux there
 
 
 
+Linux Security Model:                                    note: .sh is basically an .exe (it's a shell script)
+Root can do anything
+If attacker gains root, defense gets a notif 
+If you get root access, you get complete access to the system 
+
+Linux DAC Model (Discretionary Access Control):
+Subject is user 
+Object is file
+kernel assigns object permissions 
+eg. user, group, other 
+
+
+File Permissions on UNIX:
+There's two ways to depict permissions on UNIX (letters and numbers)
+r - 4
+w - 2 
+x - 1
+So 7 means all r,w,x
+6 means r,w 
+
+eg -rw-rw-r-- maestro conductors 222 Apr 1 02:00 music.sh
+    6 6 4 
+  maestro (owner) can read
+  conductors (group) can read
+  other can read
+In decimal notation, what's the worst perms you can give, 7 7 7
+best/most secure? it depends... 6 0 0 (princple of least privilege, only give access to those who need it)
+
+
+CHMOD:
+chmod 0764 filename 
+chmod u+wrx, g+rw, o+r filename (don't use this one, it's confusing for no reason, chdmodcommand.com)
+
+
+
+
+
+
+
+
+
+
+
 
 
 
