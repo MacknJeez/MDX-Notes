@@ -19,8 +19,8 @@ Basic OS Hardening:
 Only install/enable what you require (keep it minimal)
   he gives example of enabling Internet Information Services in Windows Features (Reference monitor checks if it's on, and who can make changes to this setting)
 Disable unnesscesary services 
-
-
+CHange Default Passwds
+Configure Privileges (windows via group policies in activedirectory, linux there's scripts)
 
 
 
