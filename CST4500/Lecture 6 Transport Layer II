@@ -59,6 +59,48 @@ What happens when it starts approaching the max amount of data that's sent?
   Once you approach max limit, Lambda-in reaches max (bottleneck) and the actual output to the reciever won't increase.
   The delay increases as it approaches R/2 becomes exponential.
   
+Scenario 2: (Finite Buffer)
+If something is lost, sender has to retransmit.
+There can be retransmissions, something is lost and the sender has to retransmit. (Lambda'-in >= Lambda-in)
+
+Lets assume the sender only sends data when the buffer in the reciever is available.
+you have 10 packets but you end up sending 12 and 2 of them are just copies of the ones that were lost in the last transmission. So the actual throughput reduces because actual data is 10 but being sent across is 12.
+This leads to wasted capacity.
+
+another case in this scenario can be:
+  the buffer is not full but the copy and the original are both sent across. Leading to even lower throughput. 
+
+
+Scenario 3:
+Four senders
+Multihop paths
+Timeout/retransmit exist
+
+If congestion exists, then entire connections can fail, causing for entire retrans and 0 throughput 
+
+
+
+Ways to approach Congestion Control:
+Sender sees what's happening and infers that there's congestion and slows down the transfer rate. 
+The network or router tells the senders that there's congestion. (TCP Explicity Congestion Notification or ECN, by default it's turned off on some routers)
+
+TCP's Congestion Control:
+AIMD (Additive Increase Multiplicative Decrease, increase by 1 each time and decrease by halving)
+  once the sides establish congestion, each time the amount of data sent is increased until data loss happens. If congestion happens, then the rate is dropped  
+  sawtooth graph
+  TCP Reno (packet loss is based on triple ACK, sending rate is dropped down to half)
+  TCP Tahoe (packet loss is based on Timeout, 1 Maximum Segment Size)
+
+CWND (congestion window) is adjusted by the OS itself, it's not seen in the headers. It's a dynamic value. 
+TCP doubles the sending rate until the SSThresh, and after the threshold, it switches to linear increase of sending rate. (ssthresh is half of cwnd value)
+TCP Reno halves the speed. I
+TCP Tahoe drops it down to 1 and starts again. This method increases by doubling until the ssthresh. 
+
+
+
+
+
+
 
 
 
