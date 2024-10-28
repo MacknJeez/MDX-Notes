@@ -8,6 +8,7 @@ Checksum is for data integrity (error checking)
 Today is about TCP, flow control, congestion control, connection oriented reliable transport 
 (flow control is about the reciever, congestion control is about the network itself)
 
+Flow Control in TCP:
 When a TCP connection is established, a buffer (memory space) is allocated [Flow Control]
 What can go wrong with this?
 The buffer is a limited size, it can get overloaded when the network layer sends more data than the application layer can handle. This is on a single machine, so it's recieving more data than the application can take out of the buffer.
@@ -21,7 +22,79 @@ Let's say the reciever is willing to recieve 10k bytes (rwnd is 10k)
 The sender can send 10 packets (assuming 1k bytes each) regardless of whether ACKs are sent back. 
 If 5 of those packets aren recieved, meaning 5 packets are not recieved. So the sender can send the remaining 5 packets again along with another 5 packets (assuming window size/ rwnd is same size)
 
-note: window size is variable, we just assume 10kbyte size for simplicity 
+note: window size is variable, we just assume 10kbyte size for simplicity. The window size is initially decided in the first handshake between the networks.
+
+Why a Three Way Handshake? and not a 2 way handshake?
+will 2way handshakes always work in a network?
+  there is no guaranteed bandwidth
+  could be retransmitted messages cuz of message loss
+  messages might get reordered 
+  you don't know what's happening on the other side (only doable using seq no and ACKs, which can go out of sync also in 2way)
+
+
+Scenario:
+you open a connection, you send req_conn to server and it takes longer than usual to send the ack back to sender. 
+So you send another req_conn to connect again, and in the time that it takes to send the req_conn, the server acknowledges and transfers the required data back to the sender. 
+By the time the sender is gone, the server sends the second req_conn but the sender is already gone (dangling connection?)
+
+3way makes sure that the second connection won't happen and makes sure that these scenarios won't happen. 
+
+Like establishing connections with 3 way handshakes, there's a process for closing the connection. (FIN and ACKs)
+Can be in 4 steps (imagine 3way but with the ACK/SYN split into two, and the SYN becomes a FIN)
+
+
+Congestion Control:
+To ensure that the network doesn't get burdened.
+Usually some bottleneck in router(s) which leads to packet loss. (compared to Flow control in senders and recievers, and there's a buffer overflow that leads to lost packets)
+
+
+Scenario 1:
+Two hosts/clients, two servers and a network and router in between. Assume infinite buffers
+Two flows, 
+HostA to Server A
+HostB to ServerB
+Both connections are getting equal bandwidth (R/2)
+Each sender can send as much data as they want, with R/2 bandwidth (Eg. 100/2 MB/s)
+What happens when it starts approaching the max amount of data that's sent?
+  Once you approach max limit, Lambda-in reaches max (bottleneck) and the actual output to the reciever won't increase.
+  The delay increases as it approaches R/2 becomes exponential.
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
