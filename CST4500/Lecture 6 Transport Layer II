@@ -1,0 +1,27 @@
+How to know when data is not sent across?
+  No ACK from server
+  Duplicate ACK from server 
+
+Checksum is for data integrity (error checking)
+
+
+Today is about TCP, flow control, congestion control, connection oriented reliable transport 
+(flow control is about the reciever, congestion control is about the network itself)
+
+When a TCP connection is established, a buffer (memory space) is allocated [Flow Control]
+What can go wrong with this?
+The buffer is a limited size, it can get overloaded when the network layer sends more data than the application layer can handle. This is on a single machine, so it's recieving more data than the application can take out of the buffer.
+Once it becomes full, there will be a loss of data (dropped packets)
+
+To manage this, TCP has certain flow control headers (reciever window)
+Each side mentions how much data they're willing to accept via the reciever window (not a fixed value, can change at each data transfer) Default value is 4096 usually.
+eg. you can see roads that have boards that say trucks and stuff can't cross this road or bridge at certain times to reduce traffic, the board is basically what reciever window is.
+
+Let's say the reciever is willing to recieve 10k bytes (rwnd is 10k)
+The sender can send 10 packets (assuming 1k bytes each) regardless of whether ACKs are sent back. 
+If 5 of those packets aren recieved, meaning 5 packets are not recieved. So the sender can send the remaining 5 packets again along with another 5 packets (assuming window size/ rwnd is same size)
+
+note: window size is variable, we just assume 10kbyte size for simplicity 
+
+
+
