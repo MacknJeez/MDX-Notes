@@ -82,7 +82,7 @@ If congestion exists, then entire connections can fail, causing for entire retra
 
 Ways to approach Congestion Control:
 Sender sees what's happening and infers that there's congestion and slows down the transfer rate. 
-The network or router tells the senders that there's congestion. (TCP Explicity Congestion Notification or ECN, by default it's turned off on some routers)
+The network or router tells the senders that there's congestion. (TCP Explicit Congestion Notification or ECN, by default it's turned off on some routers)
 
 TCP's Congestion Control:
 AIMD (Additive Increase Multiplicative Decrease, increase by 1 each time and decrease by halving)
