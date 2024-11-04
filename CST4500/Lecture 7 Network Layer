@@ -1,0 +1,110 @@
+Flow Control : sender doesn't send more than what the reciever can recieve. (recieve window or rwnd in the packet header)
+Congestion Control : makes sure that the network is not overwhelemed. (ACKs from the reciever's side tells the sender the state of network. If not receieved on time or at all, then sender assumes that there's 
+                                                                        congestion, controls it using Add Inc Mult Dec)
+
+
+What's the core job of the Network Layer?
+(google) establishes and maintains end to end connections between devices 
+Two main functions:
+Forwarding (move packet from one interface to another in the router) [one interchange to another]
+Routing (decision about what path supposed to take) [the entire trip across the country]
+
+Packets or Datagrams are transported by Network Layer (Attaches a header which has source and dest IP along with other things 
+
+
+Routing helps routers learn about other networks (A connected to B connected to C, A doesnt' know C exists, with routing it learns that C exists)
+Types of routing 
+RIP (used in lab)
+OSPF
+eigrp
+
+
+Data Plane:
+The forwarding process is taken control by the data plane 
+Local, per router
+Figures out which data heads to what header (usually figured out from the header of the packet)
+
+Control Plane:
+What's the best path between routers to reach end goal 
+Two approaches-
+  enable RIP, eigrp etc (traditional)
+  a separate server (can be remote) does the calculation for what's the best path (Software-Defined Networking) 
+  
+
+
+Network Service Models:
+
+Defines what kind of services are availale (based on the requirements of the data being transported
+eg. guaranteed but 40ms delay or less, should be the right order and have the right bandwidth etc.
+
+Types of Service Models:
+-IP (internet protocol), it's a best effort. No guarantees for QoS (Loss, Order, Timing)
+
+
+Why doesn't basic IP have guarantees?
+  Easier to deploy, simplicity of mechanism
+  there's higher quality of infrastructure, already good enough without having the guarantees 
+  there's CDNs now, less chance of loss and higher chance of getting the data
+  congestion control mechanisms 
+
+so why try and fix it if it's not broken?
+
+
+
+
+Switching rate is how fast you can transfer packet from input port to output port 
+
+
+Head of Line Blocking (HOL): some packet ahead of you is competing with some other packet, so you get delayed 
+
+
+
+
+
+RED in congestion control (randomly drop certain packets, before the buffer is full. so the sender doesn't get an ACK, which tells the sender that the buffer is full)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
