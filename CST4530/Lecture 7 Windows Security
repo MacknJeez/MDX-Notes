@@ -79,10 +79,25 @@ Used to identify security principals
 
 
 
+ssh in Linux is winrm in Windows 
+In Windows AD env, you can have multiple domain names, part of one university active directory
 
 
+Recall: Basic OS Hardening Principles
+Secure boot is used in all devices, even in phones and windows machines (8.1 and above) and macos also 
+  on boot, there's a series of steps that happens before the OS is loaded
+  how to secure this
+    takes the SHA hash of the entire OS, calculates the live SHA for the OS that's being booted and compares with previously generated SHA 
 
+Encrypt the disk (all OS have different ways of doing it)
+  even if laptop is stolen, the attacker won't be able to get the data even if they have the laptop
+  Bitlocker (used in windows) uses the PBKDS 
 
+Install only what you need
+Change default passwords
+remove unnecessary software (bloatware, debloating)
+or just 
+follow CIS benchmarks 
 
 
 
