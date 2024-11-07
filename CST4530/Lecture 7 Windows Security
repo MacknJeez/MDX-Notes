@@ -22,7 +22,7 @@ Fundamentals:
   LSA or LSASS (authenticates the user, does everything regarding authentication)
  
   Win7 and below, had a lot of vulnerabilites so other programs could probe the memory space where LSA program is running and extract the passwords from there. 
-  WHen you first open a file, it goes and finds the required slot for amount of RAM available, in prev versions of LSA it would always load in same location of RAM.
+  WHen you first open a file, it goes and finds the required slot for amount of RAM available, in prev versions of LSA it would always load in same location of RAM. (Address Space Layout Randomizer)
   So malware writers could predict where the data is stored for applications. 
   There's still vulnerabilities.
   MIMICATZ is used mainly, it's open source and there's many versions of it. 
@@ -91,7 +91,8 @@ Secure boot is used in all devices, even in phones and windows machines (8.1 and
 
 Encrypt the disk (all OS have different ways of doing it)
   even if laptop is stolen, the attacker won't be able to get the data even if they have the laptop
-  Bitlocker (used in windows) uses the PBKDS 
+  Bitlocker (used in windows) uses the PBKDS
+    if you don't have a TPM on a system, you can still use a BitLocker but the key is stored on an external key (if bitlocker stores the key, then the point is lost)
 
 Install only what you need
 Change default passwords
@@ -100,16 +101,20 @@ or just
 follow CIS benchmarks 
 
 
+Heap Protection (heap is the part of the memory that stores dynamic data)
+Why allow one app to read mem location of another?
+  the whole OS fails if turned off, cuz these programs have to call the other program for the service to be completed
 
 
+Pagenation (the pagefile.sys, the virtual RAM)
+important shit stored on RAM, anything else can be stored in pagefile.sys (paged memory pools)
+Windows kernel now has security against it
 
 
+If you see task manager, even if one chrome app open, multiple processes exist as a form of containerization (to protect other tabs from one possible compromised tab)
 
-
-
-
-
-
+How does the Windows Smart Screen know that a file was downloaded from the web?
+  Mark of Web, part of the metadata that's included on the downloaded file
 
 
 
