@@ -1,0 +1,117 @@
+First Class taught by Harsh, he's windows security profession 
+
+kernelspace is where anticheats run 
+
+3 Types of OS:
+Windows 
+  userspace kernelspace 
+  multiple rings within kernelspace 
+Linux (entire filesystem is read/write)
+  userspace kernelspace
+  no rings within kernelspace, though there's multiple programs in it
+Mac (basically UNIX) (linux partition is read only)
+
+SAM File: Security Account Manager file 
+  Resposible for storing credentials in Database
+  Any interactions with the passwords, the SAM process interactcs with the passwords 
+  Can be configured to store the previous passwords to make sure new password is not the same 
+
+
+Fundamentals:
+
+  LSA or LSASS (authenticates the user, does everything regarding authentication)
+ 
+  Win7 and below, had a lot of vulnerabilites so other programs could probe the memory space where LSA program is running and extract the passwords from there. 
+  WHen you first open a file, it goes and finds the required slot for amount of RAM available, in prev versions of LSA it would always load in same location of RAM.
+  So malware writers could predict where the data is stored for applications. 
+  There's still vulnerabilities.
+  MIMICATZ is used mainly, it's open source and there's many versions of it. 
+  (RAODtools, used for Cloud ADs, like MIMIKATZ does for windows and stuff)
+  Passwords are stored in a SAM file, it's encrypted by many methods. So the hash is stored in a file, but never the actual password.
+  If personal computers, the password is stored as an irreversible hash 
+  If company or uni laptop, password is stored in cache
+
+
+LSASS
+  Pasword can either be in hash or encrypted (windows, linux and mac have only hashed in etc/shadow file)
+  If stored with encryption, then key storage is also important, if key is unsecure then password is also unsecure. 
+  If you're a individual PC, then the credential provider is the SAM file where the password hashes are stored. If you're in an ActiveDirectory env (corpo) then the corp is the credential provider.
+
+
+
+LSA vs LSASS
+  LSA is a function, LSASS is the file or program that implements that function. (LSASS is calculator, LSA is the math)
+
+
+
+Password Based Key Derivation Functions (PBKDS, written PBKCS in the ppt):
+  eg. Users will enter a pin to login in whatsapp or something, apps say that they're encrypted. So how? 
+  The pin is encrypted and the key that's derived at runtime to decrypt the pin, so the system doesn't have to store the key on system.
+
+
+Local vs Domain Accounts:
+  note: breakglass account, it's a backup local account that's supposed to be used incase everything else has stopped working. 
+  local accounts are good, if internet is down and you can't access the corp domain, then you can still use the system 
+
+  AD (active directory) accounts can be used from any system, regardless of which one is yours, in eg. corporate envs
+
+
+What is NTDS.dit file?
+data about users, when and where they logged in, who logged in 
+Stores Active Directory data
+
+
+Pass the Hash (PtH) 
+use the hashed password instead of the actual password, saves the actackers time 
+used mainly when there was only windows systems
+now where there's web stuff, not PtT (pass the ticket)
+
+imp: what's a ticket granting ticket?
+
+
+
+Like UID, GID there's also a SID (Security identifier)
+Used to identify security principals
+  When a user logs in, it's called an interactive login, when the background services authenticate on your behalf it's called non interactive login 
+  the process has to show proof that it's the actual process that it's claiming to be, the processes use Service Accounts 
+  The unique identifier for those service accounts is called Security Identifier 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
