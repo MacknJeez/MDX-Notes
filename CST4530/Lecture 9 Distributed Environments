@@ -54,7 +54,13 @@ First get the DNS name, connect a satellite server and then download the patch t
 
 
 
+3WAy handshake (SYN SYNACK ACK) is not the same as TLS handshake 
 
+
+key terms:
+XSS is about injecting scripts into a web page to execute in the user's browser.
+CSRF exploits the trust a web application has in the user’s browser, tricking the app into processing unwanted actions on behalf of the user. (chatgpt)
+https://portswigger.net/web-security/csrf/xss-vs-csrf#:~:text=Cross-site%20scripting%20(or%20XSS,they%20do%20not%20intend%20to.
 
 
 
