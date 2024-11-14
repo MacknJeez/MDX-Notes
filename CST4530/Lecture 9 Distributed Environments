@@ -1,0 +1,87 @@
+New concept: The RED Pattern
+
+a pattern is a reusable control                note: even browser footprint can be called PII 
+
+
+1) classify data 
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Cover the windows slide by myself 
+
+
+
+example of distributed environments: the web, e-commerce platforms, kubernetes clusters
+
+Kubernetes is largely for containers orchestration 
+Containers vs VMs (containers are stripped down, bare minimum for applications to run, no GUi, easy to deploy, auto scaling is easier)
+In virtual machines, you scale vertically, add more resources
+In Containers you scale horizontally (more containers)
+
+If you wanna deploy more containers, you can kill the old container. Can't do that in VMs.
+
+Distributed systems are like ecosystems, where containers talk to each other or outside (to a VM or database)
+
+
+Containers are hard to secure, unless using automation (ENBD uses 5k-10k containers)
+
+
+
+
+TEMPEST: how susceptible a device is to a data leak 
+
+
+Security is computationally expensive, never compromise 
+
+
+
+Types of Firewalls:
+Packet filters (checks traffic upto layer 5)
+Application and gateway proxies (checks traffic upto level 7)
+Stateful Inspection (smart) firewalls
+
+
+Every packet going out must go through a proxy
+never allow an internal system connect to an IP address (command and control, malware usually has an IP to download from)
+Proxy is kinda like a firewall, providing an intermediate between a website and a device
+
+
+If you have a bunch of servers and you need to download a patch from an IP:
+First get the DNS name, connect a satellite server and then download the patch to the server and do some automation to retrieve it from the server to the other servers
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
