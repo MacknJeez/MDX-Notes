@@ -4,10 +4,25 @@ When a path or router goes away (router dies or something), eg. in Dynamic routi
   The traffic doesn't immediately switch to C, it takes some time to figure out a new path to the end destination 
 
 
-Dijkstra's link state algo (used in OSPF)
+Dijkstra's link state algo (used in OSPF) (On^2 complexity)
 
 it's the same as UG, read something online with example 
 Algo that runs on the router 
 
 It uses the algorithm to determine the next shortest path from that router (so from u, next shortest path to anything is through x
                                                                               from x, the next shortest path is y .....)
+
+
+
+Bellman-Ford (one of distance vector routing prot)
+  each router shares routing table with neighbour (this is distance vector routing protocol)
+
+After flooding of data in the mesh of routers, it has the information of weights between the nodes, so it checks how far to dest via current node (shortest)
+Usually, the routers will keep running the tables for a certain amount of time, RIP will share routing every 30 seconds, no matter what
+AIGRP doesn't do that, it sends when there's a change (it knows there's a change if some path goes down, some flooding happens)
+
+
+Routing should be scalable.
+
+if routing protocols don't do flooding unless there's a change, then why is hierarchy needed?
+ 
