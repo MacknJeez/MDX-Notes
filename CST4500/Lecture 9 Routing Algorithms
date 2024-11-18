@@ -1,0 +1,13 @@
+Routing tables are usually built dynammically
+
+When a path or router goes away (router dies or something), eg. in Dynamic routing algo
+  The traffic doesn't immediately switch to C, it takes some time to figure out a new path to the end destination 
+
+
+Dijkstra's link state algo (used in OSPF)
+
+it's the same as UG, read something online with example 
+Algo that runs on the router 
+
+It uses the algorithm to determine the next shortest path from that router (so from u, next shortest path to anything is through x
+                                                                              from x, the next shortest path is y .....)
