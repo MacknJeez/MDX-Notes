@@ -25,4 +25,6 @@ AIGRP doesn't do that, it sends when there's a change (it knows there's a change
 Routing should be scalable.
 
 if routing protocols don't do flooding unless there's a change, then why is hierarchy needed?
+if you consider a flat network (each node is the same) for a building with 50 nodes, each time the network changes every node has to hold 49 nodes worth of info.
+to compress that, thats why hierarcy and Autonomous shit is used.
  
