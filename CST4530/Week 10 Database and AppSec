@@ -1,0 +1,71 @@
+guest speaker Subhash Dasyam (Senior security architect)
+
+
+Types of Databases:
+RDBMS (stored in a form of a table, structured data stored in structure)
+  SQL, Oracle, MySQL, Dynamo, Aurora, PostgreSQL 
+Non-RDBMS (any random data, eg. email, not stored in tables)
+  NoSQL
+REDIS (database stored in RAM)
+KeyValue Pair (KVPair, faster data retrieval)
+
+
+CRUD (create, read, Update, Delete)
+ACID principle (atomicity....)
+
+
+PowerBI has curated data (analyzed, summarized etc.)
+
+
+Negative Number Attack: 
+  try to transfer -10 dirhams to a friend, it should not accept it. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
