@@ -31,11 +31,12 @@ Blind SQLi (read in between the lines of the error messages)
 
 SQL Injection 
 Give me a coffee, but also the money in the register (asking the DB for something, along with some other data that you're not authorized to access)
+
 OWASP Top 10 
 https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html
-
-
-
+https://www.invicti.com/blog/web-security/sql-injection-cheat-sheet/
+DVWA (starred on github)
+Burpacademy (from PortSwigger), it's free 
 
 
 
