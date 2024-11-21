@@ -11,8 +11,12 @@ KeyValue Pair (KVPair, faster data retrieval)
 
 
 CRUD (create, read, Update, Delete)
-ACID principle (atomicity....)
 
+ACID principle (atomicity, Consistency, Isolation, Durability)
+  A -  Finish an entire operation, or roll back to previous state
+  C - if a data value is supposed to be int, but changes in transit then it loses the integrity
+  I - Common sense
+  D - Once you commit, it should be 100% sure that it's commited
 
 PowerBI has curated data (analyzed, summarized etc.)
 
@@ -20,8 +24,15 @@ PowerBI has curated data (analyzed, summarized etc.)
 Negative Number Attack: 
   try to transfer -10 dirhams to a friend, it should not accept it. 
 
+Blind SQLi (read in between the lines of the error messages)
+  Interpret the error message to tell what the DB is doing with the queries (can tell you the command being run in the background to run your query)
 
 
+
+SQL Injection 
+Give me a coffee, but also the money in the register (asking the DB for something, along with some other data that you're not authorized to access)
+OWASP Top 10 
+https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html
 
 
 
