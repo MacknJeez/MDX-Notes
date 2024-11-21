@@ -38,7 +38,7 @@ https://www.invicti.com/blog/web-security/sql-injection-cheat-sheet/
 DVWA (starred on github)
 Burpacademy (from PortSwigger), it's free 
 
-
+Inferential based SQLi (find pattern when it's taking longer, usually the hardest type of SQL attacks)
 
 
 
