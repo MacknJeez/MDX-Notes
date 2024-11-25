@@ -1,0 +1,12 @@
+Last lecture
+
+For the routing, the commands would be:
+
+RIP:  
+  network 192.168.10.0 255.255.255.0
+OSPF: 
+  - network 192.168.10.0 0.0.0.255 area 0                   (not subnet mask, it's the wildcard mask - 255.255.255.255-subnet mask)
+  - network 192.168.10.1 0.0.0.0 area 0 
+  - int g0/0/0 
+    ip ospf 10 area 0 
+  
