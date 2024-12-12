@@ -1,0 +1,24 @@
+ on-demand delivery of IT resources over the Internet 
+
+
+
+
+Horizon - OPENSTACK and OpenNebula (open source cloud stuff, like azure aws but self hosted ie. private clouds)
+
+KVM, VMWARE is not cloud, but it's orchestration platform to manage and build cloud
+
+
+Physical hardware is baremetal, where the cloud orchestration tools are installed
+
+VirtualMachines are the old way of doing things. VMWARE is the hypervisor that can create the virtual machines on the hardware itself. Which usually has it's own OS (host OS).
+A lot is wasted in running hostOS and then the virtualOS. So containers were designed, to run lightweight systems. 
+
+Pay-as-you-go model, pay for what you use, not what you reserve.
+
+DigitalOcean is a paid software, that won't let you install it on your systems but make you use their hardrware. 
+
+In any IaaS, physical security is not concern of customer.
+But to make sure that the hardware is up and running is upto cloud provider. We don't care how microsoft does it. 
+
+
+PaaS (shopify is a paas, you gotta work on it by designing and modify. even wordpress is another paas)
