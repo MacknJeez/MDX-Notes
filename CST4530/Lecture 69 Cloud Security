@@ -63,7 +63,15 @@ eg. nto allow emails with .exe files in it
 eg. in github, code uploaded doesn't have credentials.
 
 
+Configuration drift management is a key control 
 
+permission creep (read needed but given write and exec)
+
+
+using appomni and other SaaS, you can implement pre-made policies from the SaaS proivders.
+
+
+SaaS to SaaS apps are where people can make mistakes. 
 
 
 
