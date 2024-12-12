@@ -41,6 +41,7 @@ CSPM cloud security posture management. for IaaS and PaaS.
 SSPM software security posture management for SaaS. obsidion, appomni 
 
 container security tools like sysdig (opensource if falco.org etc.)
+redhat advanced cluster also another example, for kubernetes
 what do you want to protect? [compute, storage, networks is the basic requirements of a computer]
  from Compute perspective, the container has to eb free from vulns from OS or java/nodejs packages (code) 
  Runtime security, anomaly in behavior. 
@@ -75,7 +76,17 @@ SaaS to SaaS apps are where people can make mistakes.
 
 
 
+Nessus will do scan (some package vuln eg) and give warning
+then prioritize, kernel hooks to see if vuln lib is actualyl loaded in kernel or not. (vuln prioritization)
+then how do I know hwich vuln has a fix or not? 
+out of these, figure out which is worth fixing
+if still vuln but no fix, then compensating controls 
 
+if critical api, can't be swapped, usually patched immediately 
+
+1 day attack:
+ vuln found, patch made
+ people start analyzng the patch and see what's different. and reverse engineer the patch to find vuln and attack.
 
 
 
