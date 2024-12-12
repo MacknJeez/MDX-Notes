@@ -22,3 +22,64 @@ But to make sure that the hardware is up and running is upto cloud provider. We 
 
 
 PaaS (shopify is a paas, you gotta work on it by designing and modify. even wordpress is another paas)
+Whatever you put onto the software is upto you, nothing else is upto you. "Just come and use it"
+Unfortunately this means everyone gets the same platform. Very little room for innovation and competitive benefit over other companies using it.
+
+
+Cloud providers make the most money from SaaS cuz least work for users so more cost. IaaS is where they make the lowest.
+
+ShadowIT is a problem cuz it lets nontech people setup SaaS, which might lead to data leaks which can't be managed by the user's company IT team.
+
+
+Apple E2E is not the normal E2E, cuz it's encrypted in transit and you have to pay extra for storage encryption. 
+
+
+DBaaS is a new type, mongoDB atlas is an example. Managed by mongoDB, but you can use their DB storage machines. 
+
+
+CSPM cloud security posture management. for IaaS and PaaS.
+SSPM software security posture management for SaaS. obsidion, appomni 
+
+container security tools like sysdig (opensource if falco.org etc.)
+what do you want to protect? [compute, storage, networks is the basic requirements of a computer]
+ from Compute perspective, the container has to eb free from vulns from OS or java/nodejs packages (code) 
+ Runtime security, anomaly in behavior. 
+ask chatgpt for more
+
+
+RASP runtime application self protection
+- basically runtime security
+
+How do you make sure the containers are sending to a server for SOC teams to analyze
+
+For each NIST cycle, there has to be a control for each step. 
+
+
+
+Cuz lesser ability to do things, harder to secure SaaS. and there's no standardization so every company has their own softare and security for it. so no standard api to access data and stuff but within the app itself, the way different users access data is common. 
+across provider is not same, but within users of the software it's the same so no need to change code. 
+eg in Office365, ImpossibleTravel (can't travel across the world and access the system within a second. 
+eg. nto allow emails with .exe files in it
+eg. in github, code uploaded doesn't have credentials.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
