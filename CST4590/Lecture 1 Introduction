@@ -88,6 +88,38 @@ See if it's changed - Hashing
 Make sure it's available - Anti DDOS, redundancy servers, networks, applications
 
 
+owasp-risk-rating.com
+
+
+
+Relationship between Assets Threats, Weaknesses, Exploits ,Risks and Countermeasures 
+
+Two ways to approach this, backwards from risk or top down.
+Basically, RISK = LIKELIHOOD X IMPACT (inherent risk, what can happen when no control applied)
+After controls applied, it's called residual risk
+
+How to assess risk?
+ASSET          what you're trying to protect
+THREAT AGENTS  people who try to attack assets
+THREAT         something that causes harm to vuln assets (malware, human error, social engg)
+RISK           when you exploit vuln asset, then risk
+COUNTERMEASURE controls against vuln exploits
+OWNER          people who own the asset, apply controls/countermeasure
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
