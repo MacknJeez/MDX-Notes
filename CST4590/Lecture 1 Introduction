@@ -32,3 +32,40 @@ Forencesics comes in R and R, sometimes in Detect also
 CSIRP/Playbook, in the playbook it must be specified the detection measures and prevention measures
 
 190-200 days to detect an incident, which is reducing with each time it's fixed and shared.
+
+
+How to prepare against threats that have infinite time and money?
+- At technical level (eg. SOAR programs)
+- At non technical level (governance, organizational level)
+
+NOT ALL DATA IS WORTH THE SAME!!!
+
+If in asset list you find print server and database, database is more valuable 
+
+
+The perfectly secure system doesn't exist, umless disconnected and covered in concrete and buried in the ground
+
+Assurance is level of confidence that you provide to customers that the system and data is secure. Can be expensive, needs money to ensure controls are in place. 
+Audits are there to make sure you spend the money on the right things.
+
+You cannot secure 100% of assets. Prioritize the right assets. 
+
+"Always prioritize the public facing assets first." It's exposed to the world.
+Second priority is 3rd party exposed apps (eg APIs, ENBD to VISA/Mastercard etc)
+
+Users and Business processes are often the greatest weaknesses. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
