@@ -95,8 +95,10 @@ owasp-risk-rating.com
 Relationship between Assets Threats, Weaknesses, Exploits ,Risks and Countermeasures 
 
 Two ways to approach this, backwards from risk or top down.
-Basically, RISK = LIKELIHOOD X IMPACT (inherent risk, what can happen when no control applied)
-After controls applied, it's called residual risk
+Basically, RISK = LIKELIHOOD X IMPACT (INHERENT RISK, what can happen when no control applied)
+After controls applied, it's called RESIDUAL RISK
+Likelihood = threat and vuln
+Impact = 
 
 How to assess risk?
 ASSET          what you're trying to protect
@@ -107,9 +109,36 @@ COUNTERMEASURE controls against vuln exploits
 OWNER          people who own the asset, apply controls/countermeasure
 
 
+RAG/MRAG indicators (maroon, red, amber, green) to show how risky a thingy is
 
 
+Method to Estimate Risk (using owasp-risk-rating.com)
+eg. web server
 
+what skill level needed? (low, v low)
+what is reward? (high reward)
+Oppurtunity, how much time and money needed? (not much money, easier for attacker so higher risk)
+Size (anonymous)
+Est Threat Agent Factor: High 
+
+
+Automated tools available
+Public Knowledge vuln 
+Detections not enabled (for now)
+
+Vuln factor : high 
+
+he just goes through some more options in the other calculations
+
+
+OWASP uses numbered system
+
+can also use matrix of:
+              HIGH 
+ impact       MEDIUM
+              LOW
+                      LOW   MEDIUM    HIGH
+                          likelihood
 
 
 
