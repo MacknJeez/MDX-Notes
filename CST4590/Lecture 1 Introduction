@@ -82,8 +82,10 @@ ORGANIZATION ROLES
 
 Signal Intelligence (Sig-Int) captures 1s and 0s, whether between human or computers (TEMPEST, monitors leaking energy which can be captured and decyphered. Used faraday cages to surpress this)
 
-
-
+CIA TRIAD
+Keep it confidential - Encryption
+See if it's changed - Hashing
+Make sure it's available - Anti DDOS, redundancy servers
 
 
 
