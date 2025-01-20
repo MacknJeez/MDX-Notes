@@ -156,8 +156,11 @@ Accept (don't do anything)
 Avoid (shut down the web server)
 
 
+Risk (inherent) = Likelihood x Impact
+Residual risk = remainng risk after implementing control
 
 
+After you implement controls, assess risk again (impact stays the same, likelihood changes so risk can also change)
 
 
 
