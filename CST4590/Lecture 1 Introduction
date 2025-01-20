@@ -85,7 +85,7 @@ Signal Intelligence (Sig-Int) captures 1s and 0s, whether between human or compu
 CIA TRIAD
 Keep it confidential - Encryption
 See if it's changed - Hashing
-Make sure it's available - Anti DDOS, redundancy servers
+Make sure it's available - Anti DDOS, redundancy servers, networks, applications
 
 
 
