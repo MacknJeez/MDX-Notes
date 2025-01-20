@@ -62,6 +62,25 @@ Cyberespionage, common in pharmaceutical companies (steal formulae), aircraft de
 
 Controls shouldn't be more expensive than the risk/cost of data breach or loss 
 
+Most important is to test control/counter measure (CAPTCHA v2, is annoying to customer so it's a poor control in terms of customer satisfaction but is safe)
+
+
+CAPTCHA v3 (prob value to 0-1, anything user does might be considered robot if prob set too high)
+
+CUSTOMER EXPERIENCE 
+  do not design a sec control that harms business (should be secure but not too annoying)
+
+
+ORGANIZATION ROLES
+  Executive
+  Operational
+  Technical 
+  Government 
+  Law Enforcement
+  Intelligence Agencies
+
+
+Signal Intelligence (Sig-Int) captures 1s and 0s, whether between human or computers (TEMPEST, monitors leaking energy which can be captured and decyphered. Used faraday cages to surpress this)
 
 
 
