@@ -43,7 +43,7 @@ Confidientiality (only peeps who are allowed to see can see)
 Integrity (data should be unaltered, stable and not modified by unauth peeps) (both data in transit and stored)
   if modified, we should be able to detect the modify (hashing, hash functions)
 Availability (we can access the data when needed/system should not go down)
-
+Authentication (confirm iden of users/data ie. proof of iden)
 
 
 
