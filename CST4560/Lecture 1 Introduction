@@ -44,10 +44,12 @@ Integrity (data should be unaltered, stable and not modified by unauth peeps) (b
   if modified, we should be able to detect the modify (hashing, hash functions)
 Availability (we can access the data when needed/system should not go down)
 Authentication (confirm iden of users/data ie. proof of iden)
+Non-repudiation (accountability for actions, so you can't say "i didn't do it")
 
 
+SEC MECHANISMS
 
-
+aka security controls
 
 
 
