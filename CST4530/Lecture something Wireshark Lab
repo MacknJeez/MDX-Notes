@@ -11,3 +11,37 @@ Uses AES, aka Rjindael
 
 the higher the "rounds" the higher the bit keys, the better the algo performs in terms of security 
 
+
+using RFC tcp handshake (https://datatracker.ietf.org/doc/html/rfc8446#page-6)
+
+Certificates are how browsers know to trust you online
+  attackers can compromise the root auth certificates to direct you to malicious websites 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
