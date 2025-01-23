@@ -1,0 +1,13 @@
+CIPHER SUITES
+
+CBC/GCM/EC/OFB/PCBC/CTR/CFB basically different ways of adding randomness to encrypytion algos in data transcriptions.
+Adding long string (IV) before encryption 
+ECB not safe now NEVER ALLOWED 
+
+ECDH elliptical curve diffie hellman's algo
+elliptical curve crypto, very hard to predict so it's very good method 
+
+Uses AES, aka Rjindael
+
+the higher the "rounds" the higher the bit keys, the better the algo performs in terms of security 
+
