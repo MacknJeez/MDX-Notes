@@ -30,6 +30,11 @@ Do not run power lights directly over fluorescent lights (noise emitted from the
 Use ManTraps (revolving cubicle thingies, think of airport smart gates, don't let more than one person inside)
 Power should cut off automatically when water is detected (pls replace the damn sensors before DC inspections)
 
+A lot of ManTraps have thermal cameras (works at night as well)
+
+Example of unmanned DCs is weather data processing, acts like a CDN -> faster data delivery to you even though it's unmanned
+
+
 
 
 
