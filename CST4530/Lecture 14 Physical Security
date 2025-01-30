@@ -40,6 +40,24 @@ Example of unmanned DCs is weather data processing, acts like a CDN -> faster da
 In the 70s, the DOD of USA, orange books existed 
 Security specific book. has a bunch of security terms and methods. Only used when super needed, very outdated and also just old
 
+Bell - LaPudula Model [NO READ UP, NO WRITE DOWN]
+If you're at security level A, you can't read higher security clearance documents
+If you're at security level Z, you can't write lower security clearance documents
+
+----------------------------------------------------
+
+Operating system is a Reference monitor, can enforce BLP model 
+In VMs, Kernels, Hypervisors (layer that controls how to protect the kernel)
+
+
+
+
+
+
+
+
+
+
 
 
 
