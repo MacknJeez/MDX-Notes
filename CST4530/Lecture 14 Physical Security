@@ -1,0 +1,22 @@
+Config is easy, movement is easy. Harder to manage with DataCenters.
+
+What's the first thing that happens when a DC goes down? UPS turns on
+Keeps it on for 2-3 days (90ish days)
+Then after that it's generators (or whatever the next powersource is)
+
+NEVER TAKE POWER FROM ONE SUBSTATION ONLY
+
+Three Main Threats
+Env 
+Human
+Technical
+
+Ideal to put DC on 1st/2nd floor 
+Don't build DC in earthquake prone areas
+Don't build near volcanoes?
+
+
+
+
+
+Russia Ukraine War -> EMP attacks (on DCs?)
