@@ -80,8 +80,7 @@ Secure Coding
 
 Vuln assessments should also have remediations along with the vulns themselves.
 
-
-
+Least func on systems, eg. system that should decrypt should only have software to decrypt. no need to have both encryption and decryption also.
 
 
 
