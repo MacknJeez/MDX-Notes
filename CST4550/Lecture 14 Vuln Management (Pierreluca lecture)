@@ -39,7 +39,34 @@ It's hard to protect something when you don't know what it is. (Asset management
 Company can give you a range of subnets, with some exceptions. (large system with some sensitive networks/end points)\
 But it doesn't matter to attackers. These sensitive systems should have their own safety like load balancing etc.
 
+There usually is a vuln management engineer/security officer who oversees the vuln manangement process. Sometimes companies who rely on outside companies/subcontractors for this.
+This means that if there's a vuln, they become a point of contact/responsible for the server/end points etc.
 
+NIST Cybersec Framework
+Imp: Assets need to be identified and managed (so you can know what you're trying to guard)
+
+Vulns must be reproducable, well documented.
+
+Gotta be up-to-date about recent vulns (study about recent vulns)
+
+Based on some factors, risks to the company may be higher or lower than what you find them to be
+
+VUlns are cheaper to fix in design stage rather than final stages
+
+DevSecOps cycle:
+Plan (threat modeling) -> Build (security controls on source code, code review)
+
+What does fix/resolve/remediate?
+  Updating software or even the configuration of the infra
+
+Are all remdeiations the same?
+  No, the ones that fix it completely are better than ones that fix it partially
+  Analysis of risk, whichever is most cost effective and fixes the most?
+  Fixing the root cause is better than putting controls
+
+  eg Web App with SQL vuln, fixing the vuln is better than putting WAF
+
+Wha
 
 
 
