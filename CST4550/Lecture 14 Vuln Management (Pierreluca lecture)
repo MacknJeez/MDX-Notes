@@ -66,7 +66,21 @@ Are all remdeiations the same?
 
   eg Web App with SQL vuln, fixing the vuln is better than putting WAF
 
-Wha
+eg Apple CPU side-channel attack, so it's physical vuln.
+eg. YubiKey, no firmware, if there's a vuln then the physical key has to be changed.
+
+Sometimes compare old software with new patch, and then find the vuln in the old software. And then write exploit for that. Patches aren't installed immediately in all devices all together. Window of exposure. 
+
+Hardening OS, to identify a set of config changes to increase sec of system/reduce attack surface.
+eg. install apache web server, this is general purpose install. turning off all functionality that is not needed is hardening the install of web server.
+
+CIS OS hardening guildlines, sometimes can conflict with functionality that's required, so do as much as possible but without reducing func.
+
+Secure Coding
+
+Vuln assessments should also have remediations along with the vulns themselves.
+
+
 
 
 
