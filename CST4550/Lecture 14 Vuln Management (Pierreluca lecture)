@@ -1,0 +1,66 @@
+Virtual Machines
+  from a systemic point of view, IT stacks have many components that interact with each other. 
+  bare metal vs virtualized vs containerized
+
+Vuln Management = Identifying, evaluating, treating and reporting on sec vulns 
+Microsoft says it's a way of preventing attacks and minimizing damage.
+from org point of view, there are many assets and accesses to the assets, they have to be informed about all these assets and the vulns that affect them. 
+Usually hire companies or analysts/consultants to continuously monitor and manage vulnerabilities. (because new vulns are discovered all the time)
+Esp with many systems on the network, expensive to fix vulns (in terms of money and time)
+
+These vulns need to be prioritized, cuz can't fix all of them at the same time. So start from the most critical ones.
+
+Not all vulns are fixed by updates of software. Some might need change in source code
+
+The info gathering might show that company exposes more than required/thought previously.
+
+End goal is to reduce attack surface as much as possible, while keeping functionality and usability high. (balance)
+
+The idea is to provide comprehensive coverage of infra elements. Doesn't mean every time you do penttesting,you have to cover the whole infra. (as agreed on by the agreement between company and us)
+
+The higher the time between each pentest, the higher the window of vuln exposure. So it shouldn't be the only way companies manage vulns.
+
+"Vuln amangement is one way to inform risk related decisions." what mean?
+If you're aware of threats or vulns, then you can make important decisions based on how much risk is there. Some risks are acceptable. 
+eg. third party software, that doesn't have an alternative. 
+
+The responsiblility may not be on the main company as the software/infra is under control of a subcontractor.
+
+Mitigate doesn't always mean fix completely, just reduce prob or impact of risk
+eg. you found sqli, but for some reason it's hard to fix root cause (might be part of core func)
+so can fix with WAF, doesn't fix root cause completely, but just adds some control.
+
+Updating the source code or fixing the root cause is when you AVOID the risk, so it's fixed completely.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
