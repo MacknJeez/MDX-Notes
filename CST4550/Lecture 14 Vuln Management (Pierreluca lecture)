@@ -31,8 +31,13 @@ eg. you found sqli, but for some reason it's hard to fix root cause (might be pa
 so can fix with WAF, doesn't fix root cause completely, but just adds some control.
 
 Updating the source code or fixing the root cause is when you AVOID the risk, so it's fixed completely.
+Maybe the loss of updating or changing functionality is lower than loss of revenue by leaving it in, in that case just remove it. Best way to deal with it then.
 
+Vuln Management Cycle:
 
+It's hard to protect something when you don't know what it is. (Asset management is crucial)
+Company can give you a range of subnets, with some exceptions. (large system with some sensitive networks/end points)\
+But it doesn't matter to attackers. These sensitive systems should have their own safety like load balancing etc.
 
 
 
