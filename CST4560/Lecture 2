@@ -24,6 +24,8 @@ Routing Control mechanisms:
 
 Reflector Attack:
 Attacker impersonates a victim to a server (reflectors, do a particular service)
+Large number of reflector messages can cause a DDOS in the victim as the reflector server sends data back, because sometime the server sends back data that is too large for the victim to handle
+
 
 
 
