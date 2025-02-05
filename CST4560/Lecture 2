@@ -1,2 +1,94 @@
 Recap: What is Network Security?
 
+
+All     email, web, NFS
+People     
+Seem       RPC
+To         TCP
+Need       IP
+Data        802.11
+Processing  
+
+Protocol Design:
+Leave room for crypto and authentication 
+Make sure all sensitive fields are protectable
+Make authentical mutual (comm between two parties, both parties should auth each other)
+
+Digital certificates can be used for Identity management.
+
+Routing Control mechanisms:
+  admin can control which path is taken by the routers to send information between end users and outside the organization's network.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
