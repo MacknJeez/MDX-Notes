@@ -1,3 +1,4 @@
+
 Recap: What is Network Security?
 
 
@@ -21,7 +22,8 @@ Routing Control mechanisms:
 
 
 
-
+Reflector Attack:
+Attacker impersonates a victim to a server (reflectors, do a particular service)
 
 
 
