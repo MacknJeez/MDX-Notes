@@ -66,10 +66,12 @@ Vulns are consequences of the results of weaknesses (flaw, fault, bugs)
 
 HTB, ImmersiveLabs etc sometimes have repos of CWEs built in, so when you learn how to pentest, it also gives you information on the exploits/weaknesses itself 
 
+as SQLi is hard to defend against using blacklisting (hard to account for every possibility), then it's easier to whitelist 
 
+All vulns come from a weakness, but not all weaknesses can become vulns
+eg. weak code that's not being used, so there's a weakness but there's no vuln because it's not deployed anywhere.
 
-
-
+Information is easier to get across to non cybersec people using graphs and charts
 
 
 
