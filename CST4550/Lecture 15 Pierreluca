@@ -1,0 +1,94 @@
+CVE to identify vulns 
+CPE (the hard way)
+  eg. you have cpe string, you lookup the asset that the CPE specifies. then you get the known vulns for each program/asset
+
+
+Explain CVSS/CVE code 
+
+What does a secure system mean?
+NIST: freedom from condition that can cause loss of assets with unacceptable consequences
+What do we need to make systems more secure?
+Hardening (OS hardening) - can improve generic resiliance to external threats
+IDS - good to know what's intruding 
+
+Penetration testing is often done to blackboxes (no info about target)
+Finding weakness/vulns is proof that a system is not secure
+Not finding weakness/vulns is NOT proof that a system is secure
+
+How do we all agree on standards/conventions that the whole community uses to score vuln risk score
+  CVSS is the score 
+
+
+CVSS 
+  - Base
+  - Threat Metric Group
+  - Temporal ------------------------------------------------------------------------------------------------------------------------------------------?????? https://www.first.org/cvss/v4-0/
+  - Environmental 
+
+eg. score of 8.1 means high risk 
+
+If vuln needs physical access - we can say it's not as bad as a vuln that can be used remotely
+If attack complecity is low, then it's higher risk than high complex attack 
+Can the vuln be performed by root only? or just by any user? (usually need to be a part of the network/domain)
+Does the vuln need the user to click on a link?
+
+CVSS also introduced Subsequent system CIA 
+  eg. how it impacts systems downstream 
+
+Exploit Maturity
+  eg. research says vuln found in something, sometimes with Proof of Concept (small demo in which vuln opens calc)
+If the exploit is only in POC stage, then the score is lower than when the exploit is publicly available
+
+CVSS adds conexualization to a specfic env 
+eg. vuln exists, but it's a part of a system that's not used (test machine etc.)
+also important for prioritziation of the vuln managemnet 
+
+Race condition:
+eg. when a client connects to a site, a tcp is sent between places. An attacker that's closer to the client and can spoof and send a packet to the client faster than the actual packet that's expected.
+
+
+
+Vector Strings 
+CVSS:3.1/AV:N/.......
+rationale behind the CVSS score, basically a shortform way of describing the CVE 
+eg. CVSS version 3.1, Attack Vector is Network etc.
+https://www.first.org/cvss/calculator/4.0
+can calculate CVSS vector string using different metrics, or derive the metrics using the CVSS vector string
+
+
+https://nvd.nist.gov/general/visualizations/vulnerability-visualizations/cvss-severity-distribution-over-time
+in 2017, there was a sharp increase in all kinds of vulns for some reason???
+
+CVSS only shows public vulns!!!!!!
+
+CWE
+Vulns are consequences of the results of weaknesses (flaw, fault, bugs)
+
+HTB, ImmersiveLabs etc sometimes have repos of CWEs built in, so when you learn how to pentest, it also gives you information on the exploits/weaknesses itself 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
