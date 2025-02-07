@@ -74,8 +74,8 @@ eg. weak code that's not being used, so there's a weakness but there's no vuln b
 Information is easier to get across to non cybersec people using graphs and charts
 
 
-
-
+Example of SQLi:
+'' or 1=1-- in the password field, so it breaks the SQL search for the password in DB
 
 
 
