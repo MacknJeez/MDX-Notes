@@ -1,0 +1,83 @@
+Harsh class
+
+
+
+In the companies that only let sec team detect changes or risks:
+CISO reports to CIO 
+Local CISO (uae)
+Field CISO (middleeast)
+Global CISO (my ass)
+
+
+Types of teams in cybersec:
+Red Team, Blue Team,
+GRC (paperwork team), 
+Regulations team (converts the regulatory requirements into technical requirements), 
+security architecture
+
+These are all guidelines, how the company implements can be different. It can also be a differnet company entirely for each team
+
+BLUE TEAM
+First you gotta defend:
+  - SOC Analyst (creates alerts)
+  - Threat Intel
+  - Forensics (malware analysis)
+  - Incident Response (same as Forensics usually)
+  - Analysts (looks at alerts)
+  - Brand Monitoring (if mdx website is something, new website called something-academy)
+  - Access management 
+One team makes changes, security teams detect/review/verify change (segregation of duties)
+
+
+
+RED TEAM
+Credential/Password/Identity managemne 
+Password Chubbing (?) ---- apparently cutting off access after production or deployment 
+CyberArc, ConnectWise, Delinea
+
+Pentesting
+Reverse-engineering of bin files
+Appsec testing
+Social engineering
+In DevOps lifecycle, Build stage is where the red team first interacts with the product (Pre-Go Live)
+Identify the risks, if accept then send to GRC 
+If mitigate, then part of Security Architect role
+Identify risks after product goes live (Post-Go Live)
+Red Team also simulates real world attacks (blackbox testing)
+Assume-Breach testing
+
+
+PURPLE TEAM 
+Consultancy/Design
+Not the ones who do pentest by themselves, won't monitor SIEM solutions the whole day
+Identify risks 
+Security architects are part of this
+Whitebox testing
+
+
+
+EXTRA ROLES (recent)
+Security can't all be manual (different tools to be secure)
+
+Security Platform Owners
+Change Management (Change release team, and other aliases)
+
+
+
+
+In the companies that also let the Sec team make changes as well:
+
+Security also does end-point, network security etc
+
+
+
+
+
+
+
+
+
+
+
+
+
