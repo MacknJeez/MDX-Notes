@@ -14,7 +14,7 @@ How does an Org best respond to cyber threats?
   - Cyber Sec Plan (CSP)
   - Who does what
   - Who to approach, what funding is needed
-  - Assurances, Accreditaion (confidence that it does work, verify that it works)
+  - Assurances, Accreditation (confidence that it does work, sign off on the fact that it works)
 
 
 Legal, CISO, SOC Head, Comms team sit together to frame public replies/response to CVEs etc.
@@ -100,9 +100,21 @@ CSP - Planning ------------ VIMP
   
 
 
+-----------------------------POST BREAK--------------------------------
+
+RFP - request for proposal 
+
+Usually security questionnaires are given to non sec people, so you have to spoon feed 
+
+Operational Assurance - give assurance that it's secure even after deployment (How to practice - assume that system is breached, Assume Breach)
+Monitoring (hire the goodest to manage the average)
 
 
 
+
+Policies - how effective? - very pls
+gaps? every year the policies must adapt to new tech/vulns
+No sec plan, what happens? - can't run a sec org, can't implement sec in any org
 
 
 
