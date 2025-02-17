@@ -73,8 +73,33 @@ he shits on Akhilesh for talking in class, asks for masking tape
 
 
 
+Acceptable Use Policy (Sample) from michigan.gov
+Information systems encompasses all physical and digital 
+In Defense-level AUP, even elevator conversation and gossip is considered 
+
+Autolock for screen - 5 to 10 mins
+Remove system login details/session should last - 15 minutes (if it's lower, then it's bad UX)
+
+There's a map INSIDE FORTNITE MADE BY ENBD what the fuck XD
 
 
+
+Entity Specific Policy
+  - Almost all policies address CIA
+  - HR is v imp when it comes to Insider Fraud cases
+
+
+CSP - Planning ------------ VIMP 
+  - Must include sec in planning/deployment process (CI/CD)
+  - Business unit/client creates the Requirements (check SDLC)
+  - SDLC slightly different from Agile SDLC
+  - At every step, sec is added (SSDLC) 
+    - eg your company buys banking soft, how to make sure that it adheres to the security requirements? Before aquiring, give them questionnaire on security and let the software company answer. do demo based on the questionnaire 
+    - Influence the procurement (tell them not to buy it)
+  - Decommissioning
+    - 7 rounds of writing 0s on the HDD to make sure you can't read the data even if deleted
+    - Degaussing (removes the bits) and then the crusher
+  
 
 
 
