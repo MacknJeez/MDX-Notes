@@ -19,10 +19,36 @@ How does an Org best respond to cyber threats?
   - Assurances, Accreditaion (confidence that it does work, verify that it works)
 
 
+Legal, CISO, SOC Head, Comms team sit together to frame public replies/response to CVEs etc.
+eg. Microsoft on Azure outage (try to calm users down)
 
 
+Constraints on how orgs respond:
+Governance (CEO and board must prioritize security)
+Management (give security budget pls)
+Integration (security baked in, not bolt on)
 
 
+Organization Context: (Where to spend money)
+Budget (countermeasures are constrained by budget) (spend money on fixing the riskiest, 4 ways of responding to risk)
+  - Tolerate, Terminate, Treat, Transfer
+Risk 
+Collective Security (orgs get priviliges like fast internet, MPLS links)
+Legal (every country has its own laws, strict regulations like GDPR, PCI DSS)
+Social (control social interaction by employees, keep within limits of common sense)
+Military (usually when you go to war, there's 2 armies that fight each other. In cyber, there's no prior warning)
+Policy
+  - policy vs guideline vs standard vs procedure 
+  - not required to follow guidelines
+  - must follow standard
+  - policy states key areas that should be covered by the company (high level)
+
+Types of Policies
+  - Organizational
+  - Issue-specific
+  - Entity-specific
+
+CSP - Policy 
 
 
 
