@@ -40,7 +40,7 @@ Military (usually when you go to war, there's 2 armies that fight each other. In
 Policy
   - policy vs guideline vs standard vs procedure 
   - not required to follow guidelines
-  - must follow standard
+  - MUST follow standard (RFC for language, diff between must, should and may) [Cannot ignore, must follow]
   - policy states key areas that should be covered by the company (high level)
 
 Types of Policies
@@ -49,6 +49,15 @@ Types of Policies
   - Entity-specific
 
 CSP - Policy 
+Policies are implemented using:
+  - Standards (what)
+  - Procedures (how)
+  - Guidelines (can/cannot, boundaries, you may try this or that. flexible, within the limits)
+
+
+For every policy, CIA is the final goal 
+Every policy must contain a Scope (who, when, where, what's it about)
+
 
 
 
