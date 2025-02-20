@@ -40,9 +40,34 @@ What are some issues? (not cyber)
   - Built on Democracy (if majority says, then it's true). If majority of the nodes go rogue, then you can take control of the transactions (china, on BTC) 51% attack 
   - How does the network decide which node can add a block to the chain
     - Every node(everyone has control, democracy), selection of nodes (SWIFT network, few people have control) or one node can (single authority is easiest)
+  - More money in circulation, then there's more to spend and there's more money ..... so there's usually a hard limit on how many of the monies exists
+
+
 
 Proof of Work (PoW)
-  - 
+  - Double-spending attack (spend what you don't have, can't verify the amount of money the ownder has)
+  - When you compute (verifying the hashes are right when a new block is added to a block-chain, the reward given for the compute power used)
+  - Hardwork to make sure the crypto is legitamate 
+  - the Crypto is the digital asset of the blockchain, the reward is the same currency as the work the compute is done on 
+  - The required power is exponential, the more the blocks the exponentially harder it is to calculate and verify the hashs
+  - It's gotten so huge that one node can't do it by itself anymore, so it's done in pools
+  - Not good for environment, needs a lot of electricity and generates heat (alternates created, Proof of Stake, Proof of Storage)
+
+
+Proof of Stake (PoS)
+  - Instead of work done, you put your own money as collateral (but the workload is reduced as well)
+  - Delegated Proof of Stake
+
+There's more Proof of's, check internet 
+
+
+
+Blockchain layer:
+  - Consensus Layer is the most important (about who or which wallet has what balance)
+  - Mining Layer (make sure when new blocks are added, that there ar epoeple who can verify it) (like a bookkeeper, also keeps track of attempts to change or tamper)
+  - Propogation layer (block creation, deletion, propogation, node communication etc) (how the info is prop'd, how the broadcast works. implementation of broadcast differs between each node and stuff)
+  - Semantic Layer (like in TCP/IP, there's headers about dest source etc, this is like that but for blocks and stuff)(flooding is a positive thing, the information needs to travel across large number of nodes)
+  - Application layer (where the smart contracts are, web3, smart mobile apps)(the application that DHA built to keep track of the covid vaccs, is on this layer)
 
 
 
