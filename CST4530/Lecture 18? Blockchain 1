@@ -1,0 +1,62 @@
+What is blockchain?
+  - part of distributed ledger technology
+  - wasn't initially made for currency
+  - Used by DHA (covid vacc records), Cross-border payments (no real money, every bank has account in the place you send money from)
+  - SWIFT network, controlled by the US, when the US nerds want to punish, they stop the country from using it
+  - Trying to do immutability (if one person tries to change the transaction, the rest of the people on the blockchain can kick the person out of the blockchain)
+  - Immutable, transparent and not linked to personal info (userID is actually just walletID)
+
+HASH is v important in this 
+
+
+SenderID, ReceiverID, Sender WalletID, RexieverID is all plaintext
+
+Monero encrypts the RecieverID, SenderID but walletID is plaintext (confirm pls)
+
+First block on the blockchain is called genesis block (no hash, makes hash for the next block)
+
+If anyone tampers with any block, the neighbouring blocks will have the appropriate hashIDs to make sure that the block wasn't tampered with 
+
+Public blockchain - data is not encrypted (as a concept, can be implemented differently like Monero)
+Private blockchain - data is encrypted
+
+Encryption/Decryption still uses RSA2048 (with some exceptions)
+Needs to be asymmetric key 
+eg. Bitcoin can use RSA256,2048,5012 (min recommended is 2048, but can still use)
+
+take note of Partior, Tessera (research)
+
+P2P Peer or Point?
+In blockchain, it's Peer2Peer, but he said some weird shit you gotta double check that 
+
+Binance has nodes on the blockchain, we are just the user who uses the wallet stored on binance servers
+When we own our wallet and we host it, then we become a node on the blockchain 
+
+
+What are some issues? (not cyber)
+  - no central control to protect the full system (cuz it's P2P) (if some Peers have weak protection, then the entire network can be affected because it's compromised the ability to confirm and make a consensus)
+  - Started as a hobby project, to get around the centralized payment methods, unknown starter
+  - No Intermediate standard layer (Eth can't talk to BTC)
+  - Built on Democracy (if majority says, then it's true). If majority of the nodes go rogue, then you can take control of the transactions (china, on BTC) 51% attack 
+  - How does the network decide which node can add a block to the chain
+    - Every node(everyone has control, democracy), selection of nodes (SWIFT network, few people have control) or one node can (single authority is easiest)
+
+Proof of Work (PoW)
+  - 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
