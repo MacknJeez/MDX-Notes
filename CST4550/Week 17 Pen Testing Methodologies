@@ -112,8 +112,21 @@ Open Source Security Testing Methodology Manual 3
   - OSSTMM focuses on which items need to be tested, what to do before, during and after a security test, and how to measure the results
 
 
-
-
+Common Test Type:
+  - Blind
+    - Analyst doesn't know anything about the pentest (don't know anything), but the target knows about the test
+  - Double Blind
+    - Analyst and the target doesn't know anything (what the college is doing, DUDE THEY'RE ACTUALLY DOING A PEN TEST IN THE PEN TETS LAB AWOIDJHknaljfhnalikjeg)
+  - Grey Box
+    - Little knowledge of defenses
+  - Double Grey Box
+    - Little knowledge of defenses, full knowledge of channels
+  - Tandem 
+    - Analyst and target both know all details
+    - Tests for protection and control of target 
+  - Reversal
+    - Target doesn't know shit about the parameters
+    - Analyst knows all 
 
 
 
