@@ -1,3 +1,71 @@
 Saeed's class, he's taking the class from teams call 
 
 Pen testing methodology, pretty exciting topic 
+
+
+In UAE, you need to do the pen testing twice and then submit a report 
+
+Pen testing Exec Standard (PTES)
+  - Global standard
+  - To make sure the tests are done in the proper way
+  - released BlackHat in 2011
+  - Open license 
+  - TO ENABLE BUSINESS TO SET A BASELINE FOR PEN TESTING STANDARDS AND GUIDELINE
+
+
+PTES Methodologies
+  - 7 Major steps 
+    - Pre-engagement (define scope)
+      - what we are testing
+      - time estimation
+      - deadlines etc.
+      - Scope meeting (With client), Scope creep(subtle deviation from original scope)
+        - A simple questionnaire can help with defining the scope 
+        - eg. how many websites, what networks can be tested, no of apps
+        - usually specifies the IP ranges (helps the pen tester)
+    - Intel Gather
+    - Threat Modeling (how the attacker might approach)
+    - Vuln Analysis
+    - Exploitation 
+    - Post Exploitation
+    - Reporting
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
