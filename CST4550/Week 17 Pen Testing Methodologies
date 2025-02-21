@@ -90,13 +90,19 @@ PTES Methodologies:
 
     - Reporting
       - All findings must be reported in clear documentation 
-      - Executive summary, cummulation of all steps taken, possible ways to improve the situation and vulns
+      - Executive summary, cummulation of all steps taken, possible ways to improve the situation and vulns (more business minded)
       - Intended audience is the in-charge, in charge of security program 
       - Explain the found vuln, the weaknesses (cuz that's not the same as the vulns), risks,
       - Give fixes
         - Strategic roadmap for the client
-      - 
+      - Technical Report (to the security team, the actual implementation team, IRT, SOC)
+        - More technical report, has more details about each step, each vuln/risk/weakness
+        - Detailed steps to take for each issue 
+        - Describes the scope, info, attack path etc.
 
+
+Open Source Security Testing Methodology Manual 3 
+  - OSSTMM focuses on which items need to be tested, what to do before, during and after a security test, and how to measure the results
 
 
 
