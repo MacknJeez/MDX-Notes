@@ -89,6 +89,11 @@ PTES Methodologies:
         - Exfiltration (extraction of data from compromised systems)
         - Cleanup is important (remove all backdoors, rootkits, accounts installed by tester)
         - Someone from client should make sure the tester actually does this (or else big bad) ----------------------------------------- V IMPORTANT ALWAYS DO 100% PLS
+      - Protecting the tester
+        - Verify policy coverage
+        - Confirm laws, make contract
+        - See what you're given access to, what IPs you're given access to 
+
 
     - Reporting
       - All findings must be reported in clear documentation 
