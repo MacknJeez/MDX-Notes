@@ -26,22 +26,45 @@ PTES Methodologies:
         - usually specifies the IP ranges (helps the pen tester)
       - Communication (emergency contact list)
       - Client Incident Response team test kept in the dark as well
-      - Challenges: Scope Creep, Legal compliance, 
+      - Challenges: Scope Creep, Legal compliance
+
     - Intel Gathering
       - To collect as much info as possible about the target
       - Helps the tester to identify all attack vectors and surfaces 
       - OSINT 
         - Passive (info on third party sites like insta etc), Semi-passive (search engine data, internet traffic, internal traffic and behavior, ONLY public available reources), Active (direct interaction, like scanning oper ports) info gathering
       - Ensure the domain being tested is within the scope (avoid scope creep)
+
       - Footprinting
         - whois lookup, RIPE, ARIN, Nominet
         - BGP looking glass
       - Active Footprinting
         - Ping sweep, port scanning, nmap, banner grabbing (getting OS info, app info etc)
         - SNMP sweeps, DNS info, SMTP Bounceback
-        - Web app discovery, SQL Databases (misconfiguration of DB),  misconfigured wireless networks, 
+        - Web app discovery, SQL Databases (misconfiguration of DB),  misconfigured wireless networks
+
     - Threat Modeling (how the attacker might approach)
+      - Focuses on two elements (assets and threats)
+      - tester INDENTIFIES most likely threat vector
+      - General model
+      - Business Asset model
+      - Business xxxxx model --------------------------------- check 
+      - Clear Idenificaation of location aof threat (internal v external)
+      - Threat capability analysis
+      - Motivation modeling (motivation of threat actor/community)
+      - Compromise of comparable organizations
+
     - Vuln Analysis
+      - Start looking for vulns on the systems and apps
+      - Active testing (direct interaction with components of the test (Automated or manual)
+      - Passive Testing (no interaction with components, ie. metadata and traffic analysis)
+      - Attack trees (formal metghods for analyzing security, root = target, leaf = ways of achieving)
+      - research (public and private) (public = commercial software, public guides)
+      - eg. if you find client user's username and password in a public data base? 
+          My answer - make sure any more passwords aren't on the public databases. 
+                      Send out communication to employees regarding changing passwords, enable 2FA, Enable password changing rule (how often you have to change the passwords)
+                      make sure unused sessions aren't being used/still logged in
+                      
     - Exploitation 
     - Post Exploitation
     - Reporting
