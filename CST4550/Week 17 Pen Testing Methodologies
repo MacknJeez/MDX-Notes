@@ -13,8 +13,9 @@ Pen testing Exec Standard (PTES)
   - TO ENABLE BUSINESS TO SET A BASELINE FOR PEN TESTING STANDARDS AND GUIDELINE
 
 
-PTES Methodologies
-  - 7 Major steps 
+PTES Methodologies:
+
+  - 7 Major steps:
     - Pre-engagement (define scope)
       - what we are testing
       - time estimation
@@ -23,6 +24,8 @@ PTES Methodologies
         - A simple questionnaire can help with defining the scope 
         - eg. how many websites, what networks can be tested, no of apps
         - usually specifies the IP ranges (helps the pen tester)
+      - Communication (emergency contact list)
+      - Client Incident Response team test kept in the dark as well
     - Intel Gather
     - Threat Modeling (how the attacker might approach)
     - Vuln Analysis
