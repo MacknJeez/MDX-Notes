@@ -64,7 +64,7 @@ PTES Methodologies:
           My answer - make sure any more passwords aren't on the public databases. 
                       Send out communication to employees regarding changing passwords, enable 2FA, Enable password changing rule (how often you have to change the passwords)
                       make sure unused sessions aren't being used/still logged in
-                      
+          Class answer - stricter password policy, access/PAM control, MFA, Data Loss Prevention system, find out which system was compromised for the data 
     - Exploitation 
     - Post Exploitation
     - Reporting
