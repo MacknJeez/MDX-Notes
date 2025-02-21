@@ -93,7 +93,7 @@ PTES Methodologies:
         - Verify policy coverage
         - Confirm laws, make contract
         - See what you're given access to, what IPs you're given access to 
-
+      - The same laws can also prosecute the tester as well, as any mistakes made by the tester can lead to huge problems so it needs to be traced back to the tester (fully monitored, non-repudiation)
 
     - Reporting
       - All findings must be reported in clear documentation 
