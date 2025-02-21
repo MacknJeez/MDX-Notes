@@ -66,8 +66,36 @@ PTES Methodologies:
                       make sure unused sessions aren't being used/still logged in
           Class answer - stricter password policy, access/PAM control, MFA, Data Loss Prevention system, find out which system was compromised for the data 
     - Exploitation 
+      - Must stay within rules of engagement (can't accidentally take down their network lol)
+      - Most of the time the attack must remain undiscovered (unless testing incident response)
+      - Social Engineering, Physical access 
+      - If you get root access from low level account, you can't use that to take down the entire world but you must report how you did it (eg the same password example, you can't use the password anywhere unless consent provided)
+
     - Post Exploitation
+      - After gaining access, analyze what you can do with the access
+      - determine the value of compromised machines
+      - value of the data on the machine 
+      - Logs/data gathered must be destroyed after testing
+      - Clear documentation to avoid being sued XD
+      - Use client's policies on use of equipment 
+      - Laws on audio/video capture 
+      - Analyze the network, services on the host
+      - Pillaging (RELEVANT INFO ONLY)
+        - obtain info from target
+        - system config info, user info
+        - Data should identify the high value targets/assets
+        - Exfiltration (extraction of data from compromised systems)
+        - Cleanup is important (remove all backdoors, rootkits, accounts installed by tester)
+        - Someone from client should make sure the tester actually does this (or else big bad) ----------------------------------------- V IMPORTANT ALWAYS DO 100% PLS
+
     - Reporting
+      - All findings must be reported in clear documentation 
+      - Executive summary, cummulation of all steps taken, possible ways to improve the situation and vulns
+      - Intended audience is the in-charge, in charge of security program 
+      - Explain the found vuln, the weaknesses (cuz that's not the same as the vulns), risks,
+      - Give fixes
+        - Strategic roadmap for the client
+      - 
 
 
 
