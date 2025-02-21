@@ -66,6 +66,7 @@ PTES Methodologies:
                       Send out communication to employees regarding changing passwords, enable 2FA, Enable password changing rule (how often you have to change the passwords)
                       make sure unused sessions aren't being used/still logged in
           Class answer - stricter password policy, access/PAM control, MFA, Data Loss Prevention system, find out which system was compromised for the data 
+      - THE TESTER MUSTN'T USE THEIR OWN DEVICES, THE CLIENT MUST PROVIDE A SYSTEM SO THE DATA OF THE TESTER DOESN'T GET AFFECTED OR COMPROMISED ------------------------------------------------------- IMP
     - Exploitation 
       - Must stay within rules of engagement (can't accidentally take down their network lol)
       - Most of the time the attack must remain undiscovered (unless testing incident response)
