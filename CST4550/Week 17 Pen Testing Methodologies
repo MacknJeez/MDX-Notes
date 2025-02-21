@@ -26,7 +26,20 @@ PTES Methodologies:
         - usually specifies the IP ranges (helps the pen tester)
       - Communication (emergency contact list)
       - Client Incident Response team test kept in the dark as well
-    - Intel Gather
+      - Challenges: Scope Creep, Legal compliance, 
+    - Intel Gathering
+      - To collect as much info as possible about the target
+      - Helps the tester to identify all attack vectors and surfaces 
+      - OSINT 
+        - Passive (info on third party sites like insta etc), Semi-passive (search engine data, internet traffic, internal traffic and behavior, ONLY public available reources), Active (direct interaction, like scanning oper ports) info gathering
+      - Ensure the domain being tested is within the scope (avoid scope creep)
+      - Footprinting
+        - whois lookup, RIPE, ARIN, Nominet
+        - BGP looking glass
+      - Active Footprinting
+        - Ping sweep, port scanning, nmap, banner grabbing (getting OS info, app info etc)
+        - SNMP sweeps, DNS info, SMTP Bounceback
+        - Web app discovery, SQL Databases (misconfiguration of DB),  misconfigured wireless networks, 
     - Threat Modeling (how the attacker might approach)
     - Vuln Analysis
     - Exploitation 
