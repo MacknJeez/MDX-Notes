@@ -1,0 +1,22 @@
+---------------------------------------------------------------------------------------------------------------ENVIRONMENT EXAM-------------------------------------------------------------------------------------------------------------------
+There's a random slide in some ppt about NIST Risk Assessment Process         [RISK = LIKELIHOOD X IMPACT]
+
+  - Identify Assets and its value
+    - Market value, internal value etc.
+  - Identify Threats to those assets
+    - eg. if it's a webserver, then open ports can be a threat
+  - Identify the vulnerabilities
+    - Possible misconfigurations, old/outdated software, open ports 
+  - Determine the Likelihood
+    - How likely is it to be attacked? Does the exploit need root access? or maybe from a remote account?
+    - The harder it is to execute, the less likely it is to happen
+  - Identify Impact
+    - Is it world ending? Maybe some nuclear codes or some shit; or just the password to your homework folder
+  - Determine risk (using formula and the website, double check if you can use it in the exam)
+    - Final score is usually a decimal number from 0-1
+
+
+
+Risk Vector/Score Vector:
+  - Compact way of seeing the entire risk calculation/impact/etc whatever
+  - So whatever you put in the calculator, it's just written in abbv in a huge line
