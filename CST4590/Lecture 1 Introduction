@@ -134,16 +134,17 @@ he just goes through some more options in the other calculations
 OWASP uses numbered system
 
 can also use matrix of:
-              HIGH 
- impact       MEDIUM
-              LOW
-                      LOW   MEDIUM    HIGH
-                          likelihood
+              HIGH      Med       High     Critical
+   impact     MEDIUM    Low       Med        High
+              LOW       Note      Low       Medium
+                        LOW      MEDIUM      HIGH
+                            
+                                likelihood
 
 
 
 According to ISO27001:
-Asset is a digital doc
+Asset is a digital doc/Anythng valuable to an organization
 
 
 Defence in Depth, when hiring contractors to work in offshore branches, you gotta make sure that when controls are implemented, you have to assume the contractors are threats
@@ -161,6 +162,41 @@ Residual risk = remainng risk after implementing control
 
 
 After you implement controls, assess risk again (impact stays the same, likelihood changes so risk can also change)
+
+
+-----------------------------------ENVIRONMENT EXAM---------------------------------------
+There's a random slide in some ppt about NIST Risk Assessment Process         [RISK = LIKELIHOOD X IMPACT]
+
+  - Identify Assets and its value
+  - Identify Threats to those assets
+  - Identify the vulnerabilities 
+  - Determine the Likelihood
+  - Identify Impact 
+  - Determine risk (using formula and the 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
