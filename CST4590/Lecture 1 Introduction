@@ -164,15 +164,26 @@ Residual risk = remainng risk after implementing control
 After you implement controls, assess risk again (impact stays the same, likelihood changes so risk can also change)
 
 
------------------------------------ENVIRONMENT EXAM---------------------------------------
+---------------------------------------------------------------------------------------------------------------ENVIRONMENT EXAM-------------------------------------------------------------------------------------------------------------------
 There's a random slide in some ppt about NIST Risk Assessment Process         [RISK = LIKELIHOOD X IMPACT]
 
   - Identify Assets and its value
+    - Market value, internal value etc.
   - Identify Threats to those assets
-  - Identify the vulnerabilities 
+    - eg. if it's a webserver, then open ports can be a threat
+  - Identify the vulnerabilities
+    - Possible misconfigurations, old/outdated software, open ports 
   - Determine the Likelihood
-  - Identify Impact 
-  - Determine risk (using formula and the 
+    - How likely is it to be attacked? Does the exploit need root access? or maybe from a remote account?
+    - The harder it is to execute, the less likely it is to happen
+  - Identify Impact
+    - Is it world ending? Maybe some nuclear codes or some shit; or just the password to your homework folder
+  - Determine risk (using formula and the website, double check if you can use it in the exam)
+    - Final score is usually a decimal number from 0-1
+
+
+
+Risk Vector/Score Vector 
 
 
 
