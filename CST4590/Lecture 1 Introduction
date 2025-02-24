@@ -163,7 +163,6 @@ Residual risk = remainng risk after implementing control
 
 After you implement controls, assess risk again (impact stays the same, likelihood changes so risk can also change)
 
-
 ---------------------------------------------------------------------------------------------------------------ENVIRONMENT EXAM-------------------------------------------------------------------------------------------------------------------
 There's a random slide in some ppt about NIST Risk Assessment Process         [RISK = LIKELIHOOD X IMPACT]
 
@@ -183,8 +182,9 @@ There's a random slide in some ppt about NIST Risk Assessment Process         [R
 
 
 
-Risk Vector/Score Vector 
-
+Risk Vector/Score Vector:
+  - Compact way of seeing the entire risk calculation/impact/etc whatever
+  - So whatever you put in the calculator, it's just written in abbv in a huge line
 
 
 
