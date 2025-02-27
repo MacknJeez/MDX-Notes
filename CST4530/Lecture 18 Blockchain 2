@@ -1,0 +1,10 @@
+When coins are in unlim supply, the supply is controlled by "burning" (putting in unusuable account) to limit the supply and increase the value 
+
+To keep a coin limited, the number of blocks must also be limited (how often the block can be limited, thus limiting the no. of transactions) 
+  - This is why there are fees/gas, give extra moneis to skip the line and transactionize your thing (premium/fees/gas)
+  - This became a problem after 2014, cuz many people joined and starteding 
+    - this is where sidechains came up, every determined amount of transactions done for the sidecoin, it is then summarized and made into one transaction for the larger coin that the sidecoin is based on 
+      (TRON relying on ETH)
+
+Chain forking - Forking the codebase so that everyone using it can have their own required version of the coin without losing value but the coin's code is updated
+
