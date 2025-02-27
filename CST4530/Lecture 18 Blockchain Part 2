@@ -8,3 +8,6 @@ To keep a coin limited, the number of blocks must also be limited (how often the
 
 Chain forking - Forking the codebase so that everyone using it can have their own required version of the coin without losing value but the coin's code is updated
 
+Spotify uses Blockchain to host music
+  - Some creators want per million itna paisa do, but some users want per play (which needs a lot of trust between record company and creator) so blockchain is used to keep track 
+
