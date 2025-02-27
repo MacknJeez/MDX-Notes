@@ -3,11 +3,51 @@ When coins are in unlim supply, the supply is controlled by "burning" (putting i
 To keep a coin limited, the number of blocks must also be limited (how often the block can be limited, thus limiting the no. of transactions) 
   - This is why there are fees/gas, give extra moneis to skip the line and transactionize your thing (premium/fees/gas)
   - This became a problem after 2014, cuz many people joined and starteding 
-    - this is where sidechains came up, every determined amount of transactions done for the sidecoin, it is then summarized and made into one transaction for the larger coin that the sidecoin is based on 
+    - this is where sidechains (multilevel blockchain) came up, every determined amount of transactions done for the sidecoin, it is then summarized and made into one transaction for the larger coin that the sidecoin is based on 
       (TRON relying on ETH)
+    - Benefits of larger coins, with the speed of the smaller coins' transactions
 
 Chain forking - Forking the codebase so that everyone using it can have their own required version of the coin without losing value but the coin's code is updated
 
 Spotify uses Blockchain to host music
   - Some creators want per million itna paisa do, but some users want per play (which needs a lot of trust between record company and creator) so blockchain is used to keep track 
+
+Pump and Dumps
+  - it's so easy to make your own chain, give free coins 
+  - give yourself a bunch of those coins, sell when people put trillions into it
+  - 2017, cryptokitty (hellokitty crypto) millions of dollars earned by nerds playing 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
