@@ -18,8 +18,27 @@ Pump and Dumps
   - 2017, cryptokitty (hellokitty crypto) millions of dollars earned by nerds playing 
 
 
+In traditional finance systems, there's a trusted third party thing
+  - you go to trusted third party (usually bank), give them money as escrow, if seller has genuine goods then the bank pays them and gives you the goods
+    - Usually banks take a cut to do this 
+  - Fraud and Money Laundering
+    - banks can't collude with other banks 
+
+New Financial System
+  - No third party, self governed
+    - Using minors etc.
 
 
+Bitcoin facts:
+  - 10 mins new blocks
+  - PoW
+  - 21 million coins can be mined
+  - no. of coins rewarded for mining is halved every 4 years
+
+Etherium
+  - Extensibility (can extend the chain, that's how we have so many coins)
+  - Premium fees is called gas
+  - Started with PoW, wants to move to PoS
 
 
 
