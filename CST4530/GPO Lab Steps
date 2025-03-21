@@ -1,0 +1,11 @@
+Sample GPO Lab Question
+Add three OUs, Operations, Severs and Sales
+Please create a computer called Webserver and move it into Servers OU 
+Create a GPO in server domain called Server Security
+Using Server Security GPO, restrict local access to the Webserver to some accounts
+Using Server Security GPO, deny access to the Webserver to some accounts
+
+
+
+
+
