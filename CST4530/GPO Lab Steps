@@ -6,6 +6,12 @@ Using Server Security GPO, restrict local access to the Webserver to some accoun
 Using Server Security GPO, deny access to the Webserver to some accounts
 
 
-
+Top Right, Tools
+AD Users and Computers
+Go to your domain (mdx.local) and double click so it's on the right
+Right click, New, Organizational Units
+Go to GPMC, create new GPO (mdx.local -> Group Policy Objects, right click, new)
+Edit the GPO (right click, edit) 
+Change what they ask you to change (this part is kinda dookie cheeks, but alright when you get used to it)
 
 
