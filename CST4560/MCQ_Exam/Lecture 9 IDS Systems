@@ -1,0 +1,26 @@
+IDS and IPS, software and hardware kinds
+
+
+
+IDS (Intrusion Detection System)
+  - reactive, passive (doesn't pass traffic through itself)
+  - can be configured to have active response 
+  -  
+
+IPS (Intrusion Prevention System)
+  - proactive 
+  - not passive (traffic passes through itself)
+
+
+Detection techniques
+  - Patterns of network traffic, time of activity, IP address range 
+
+Types of IDS/IPS systems
+  - How to deploy it
+    - Network
+    - Host
+  - How to detect anomalies
+    - Signature
+    - Policy
+    - Anomaly
+    - Honeypot (issa trap, a dummy account or dummy network, when an attacker accesses, it triggers conditions within the IDS/IPS)
