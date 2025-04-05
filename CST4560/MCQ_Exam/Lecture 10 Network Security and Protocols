@@ -36,6 +36,7 @@ Security Issues in TCP/IP
   - smurfs (type of DOS attack) (send 1mpbs to 100 hosts, pretending to be victim source, victim recieves 100 replies from hosts)
   - SYN flooding (send a bunch of Syns to server, it eats its ass)
   - TCP spoofing
+  - DoS connection reset (guess the sequence number of packets and send reset packet to close link between client and server)
 
 
 Types of TCP handshake 
