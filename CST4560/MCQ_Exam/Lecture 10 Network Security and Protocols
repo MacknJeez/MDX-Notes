@@ -33,6 +33,12 @@ ICMP (Internet Control Message Protocol) (ping 8.8.8.8 to see if network is up b
 
 Security Issues in TCP/IP 
   - eavesdropping
-  - smurfs (type of DOS attack)
-  - SYN flooding
+  - smurfs (type of DOS attack) (send 1mpbs to 100 hosts, pretending to be victim source, victim recieves 100 replies from hosts)
+  - SYN flooding (send a bunch of Syns to server, it eats its ass)
   - TCP spoofing
+
+
+Types of TCP handshake 
+  - Open (Syn, SynAck, Ack)
+  - Close (Fin, Ack, Fin, Ack)
+
