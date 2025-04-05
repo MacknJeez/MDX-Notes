@@ -28,3 +28,9 @@ GPT Bhai helped ofcourse, majorly
 # IMPORTANT
 
 you need to make a file called _users.txt_ and store the allowed passwords in a <ins>username:password</ins> format
+Example
+```
+user:pass
+ass:eater
+admin:password
+```
