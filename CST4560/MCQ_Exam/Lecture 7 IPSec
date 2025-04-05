@@ -41,10 +41,12 @@ ESP (Encapsulating Security Protocol)
 
 IPSec Security Polcies
   - How know what processing to use?
-    - Security Policy Database (SPD)
+    - Security Policy Database (SPD) (list of what security polcies every datagram type should have to be considered reliable and correct)
       - On IPSec aware devices
       - made by network admins
-  - Security Associations
+  - Security Associations (what security features are used in this datagram, so the recepient can properly understand it)
     - Sender-Recepient relationship,  determins how packet is processed
     - Identified by SPI, Dest IP and AH/ESP, tells which SA to use
     - SAs are kept on the IPSec aware devices to see how to decrypt data for example
+    - Made manually or by Internet Key Exchanges (helps establish connections between devices over the internet)
+    - Combine SAs tunnel for E2E, simple SA Tunnel for G2G data transfer
