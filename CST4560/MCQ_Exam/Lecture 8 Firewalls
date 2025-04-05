@@ -1,0 +1,46 @@
+Firewalls
+Basic Firewalls Operations
+Types of Firewalls
+My ass
+
+
+
+Not foolproof, but essential in any security protection standard
+Usually between internal LAN and external networks (so DMZs etc)
+
+If a firewall can't verify some part of a packet, then it drops the whole packet entirely
+this is good because this means it's secure but can drop legitimate packets as well 
+
+Firewalls need to be strong as hell, think of the IBOSS firewall, so it can handle all the incoming packets and filter through them.
+
+UTM (Unified Threat Management)
+  - single firewall that can do it all
+  - this also means the firewall needs way more power to handle all this filtering and increased traffic flow
+
+
+Types of Firewall Filtering methods (packet inspections)
+  - Statefull 
+    - Connection Opening -> Ongoing comms -> Connection Closing
+    - Checks connection table to see if connection exists or not with the same specs as incoming traffic (white listing?)
+  - Stateless
+
+Types of Firewalls
+  - Application Proxy Firewalls (APFs)
+    - Dedicated firewall for application-specific traffic (like HTTPS application proxy for proxying HTTP requests out and in)
+    - Usually an extra feature in Statefull Firewalls, but built in application layer monitoring for APF
+    - eg. can disable HTTP POST/GET etc.
+  - Packet-filtering 
+    - all traffic directed to firewall, all traffic egress from  firewall
+    - each application can have it's own proxy gateways (SMTP, HTTP, FTP)
+    - can have application specific rules for traffic filtering 
+    - Circuit level (SOCKS, proxies your IP, VPNs alter your IPs)
+      - SOCKS is usually faster because it doesn't encrypt traffic, just changes where the traffic is going from
+    - Static Packet Filtering (ONE PACKET AT A TIME)
+    - Can block traffic based on the desc of packets in traffic (based on port numbers, IP headers etc)
+
+
+
+NAT (Network Address Translation)
+  - convert IPs to something that's already known by both sides (incoming is converted to 192.xxxx, outgoing is converted to whatever
+      65.xxx etc.)
+  - 
