@@ -26,5 +26,13 @@ IP (Internet Protocol) (best effort)
   - do as much as it can, doesn't resend anything 
   - connections made using packet header info (source, dest, size etc)
 
-ICMP (Internet Control Message Protocol)
-  - 
+ICMP (Internet Control Message Protocol) (ping 8.8.8.8 to see if network is up basically)
+  - basically used for logs and feedback 
+  - echo, ping etc
+
+
+Security Issues in TCP/IP 
+  - eavesdropping
+  - smurfs (type of DOS attack)
+  - SYN flooding
+  - TCP spoofing
