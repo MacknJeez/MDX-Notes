@@ -21,6 +21,7 @@ TCP (Transmission Control Protocol) (SENDING BOOK PAGE BY PAGE)
   - break data into packets and reconstruct at receiver end
   - lost packets are resent 
   - connection/session maintained until delivery finished
+  - flow control, sequential messages (sent in order)
 
 IP (Internet Protocol) (best effort)
   - do as much as it can, doesn't resend anything 
@@ -30,6 +31,15 @@ ICMP (Internet Control Message Protocol) (ping 8.8.8.8 to see if network is up b
   - basically used for logs and feedback 
   - echo, ping etc
 
+UDP (User Datagram Protocol) (THROWING A BOOK OUT THE WINDOW, HOPE YOU CATCH IT)
+  - connectionless (send, doesn't care if receive or not)
+  - media streaming, broadcasts (not for emails because the email data has to be sent properly or else huge asseating)
+  - no flow control 
+
+HTTP (Hyper Text Transfer Protocol)
+  - HTTPs' less secure older brother 
+  - GET, POST, HEAD etc
+  - honestly it's just website protocol, nothing more than that
 
 Security Issues in TCP/IP 
   - eavesdropping
