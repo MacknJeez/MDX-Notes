@@ -1,0 +1,20 @@
+Secure Channels
+IPSecurity
+
+
+Secure Channel 
+  - Guarantee CIA while data transfer over insecure networks 
+  - Usually has:
+    - Origin Auth
+    - Integrity
+    - Confidentiality
+  - Usually Doesn't have:
+    - Non-repudiation
+    - Security once data is recieved (have to rely on other security methods once data is received)
+
+IPSec 
+  - Transport and Tunnel modes
+  - Auth and Integrity (AH)
+  - Confidentiality (ESP)
+  - Policy and Sec Associations
+  - Key Management (IKE)
