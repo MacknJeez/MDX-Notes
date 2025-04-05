@@ -1,0 +1,30 @@
+TCP/IP and ICMP
+Security issues with these protocols
+Ping of Death, Smurf Attack
+Browsers and HTTP
+
+In the OSI layer (APSTNDP), TCP/IP is used for communication between the Transport/Network layers 
+
+Application - access to network resources
+Presentation - handle the data (translate, encrypt and compress)
+Session - manage sessions between clients and servers 
+Transport - process to process data transfer (within processes)
+Network - move data (packets) from source to dest ACROSS SYSTEMS
+Data Link - connection between hops that the packets take (between routers and stuff)
+Physical - actual cabling used for data transfer
+
+
+APSTNDP -> PDNTSPA 
+
+
+TCP (Transmission Control Protocol) (SENDING BOOK PAGE BY PAGE)
+  - break data into packets and reconstruct at receiver end
+  - lost packets are resent 
+  - connection/session maintained until delivery finished
+
+IP (Internet Protocol) (best effort)
+  - do as much as it can, doesn't resend anything 
+  - connections made using packet header info (source, dest, size etc)
+
+ICMP (Internet Control Message Protocol)
+  - 
