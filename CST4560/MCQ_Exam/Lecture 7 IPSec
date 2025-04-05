@@ -14,7 +14,13 @@ Secure Channel
 
 IPSec 
   - Transport and Tunnel modes
-  - Auth and Integrity (AH)
-  - Confidentiality (ESP)
+    - Transport is for IPSec aware hosts, Tunnel is for IPSec unaware hosts 
+    - Transport is for H-H or H-Gate, usually within same network
+    - Tunnel is for G-G, or H-G across different sites, has unsecure network in between 
+      - Transport is securing the data while transporting using algos and encryption (vuln to sniffers)
+      - Tunnel is hiding the data within some more data to keep it secure (within another datagram)
+  - Auth and Integrity (AH) (uses authentication algo to make sure it's legit)
+  - Confidentiality (ESP) (uses encryption to make sure data is not changed)
   - Policy and Sec Associations
   - Key Management (IKE)
+  - Framework for secure comms over IP (every protocol used in IP)
