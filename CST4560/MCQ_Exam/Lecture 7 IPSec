@@ -38,6 +38,15 @@ ESP (Encapsulating Security Protocol)
   - Provides Confidentiality or/and Authentication/Integrity 
   - Has SPI, SeqNo, MAC value added to the IP datagrams
 
+IKE (Internet Key Exchanges)
+  - Phase 1
+    - negotiate SA,  with keys info
+    - Specfies encryption, MAC algo, auth method, DiffHell params
+    - Bidirectional 
+    - Aggressive Mode
+      - Gives up Identity protection, flexibility and antiDOS for faster fastness
+  - Phase 2
+    - Make the actual SA to be used (with AH/ESP/AH-ESP)
 
 IPSec Security Polcies
   - How know what processing to use?
@@ -48,5 +57,5 @@ IPSec Security Polcies
     - Sender-Recepient relationship,  determins how packet is processed
     - Identified by SPI, Dest IP and AH/ESP, tells which SA to use
     - SAs are kept on the IPSec aware devices to see how to decrypt data for example
-    - Made manually or by Internet Key Exchanges (helps establish connections between devices over the internet)
+    - Made manually or by Internet Key Exchanges (establish connections between devices over the internet, negotiate types of algo etc)
     - Combine SAs tunnel for E2E, simple SA Tunnel for G2G data transfer
