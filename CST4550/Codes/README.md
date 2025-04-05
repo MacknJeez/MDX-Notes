@@ -21,3 +21,10 @@ GPT Bhai helped ofcourse, majorly
 3. ngrok should be running and you should see a link on screen that will let users access your local server on the web.
 4. run the [intranet program](https://github.com/MacknJeez/MDX-Notes/blob/main/CST4550/Codes/intranetLoginPage.py) in CLI
 5. that should be it
+
+
+
+
+# IMPORTANT
+
+you need to make a file called _users.txt_ and store the allowed passwords in a <ins>username:password</ins> format
