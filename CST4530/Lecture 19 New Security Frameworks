@@ -12,5 +12,24 @@ Firesmith Framework:
 Firesmith Framework
   - never fully implemented
   - new tech needed (eg. blockchain)
-  - 
+
+
+Early Internet
+  - ARPANET (1969)
+  - TCP/IP was chosen quickly
+  - telnet,email,FTP came after
+  - John Postel managed IP alloc (IANA)
+
+
+
+Perimeter Defence (can be bad internal defence but godly outer defence)
+  - Firewalls (packet, circuit-proxy, stateful, app-proxy)
+  - Weaker than having defence at every step (Digital Security By Design)
+  - DDoS can still smack it's ass
+  - Y-Comm is better (has DSBD)
+
+NAT
+  - Reduces attack surface of local network (machines that need global address have them)
+  - Servers aren't communicating with real end client (only with NAT firewall translator thingy)
+  - Slows down checksum calc (IPV4 header is changed by NATing)
 
