@@ -76,7 +76,10 @@ Targeted Security Models
       - Steps for Vertical handover TSM
         - QBS of mobile network cotacts QSB of potential target
         - Request passed to QBScore
-        - QoS brokers
+        - QoS brokers of all networks probed by core (MN has idea of QoS after this)
+        - NASmn starts ReAuth proc
+        - through NAS, AAA server forwards ReAuth 
+        - CentralAuth passes info to target network and do AAA(authen,author,account) functions
 
 
 
