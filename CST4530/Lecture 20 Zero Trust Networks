@@ -1,0 +1,46 @@
+Zero Trust Networks
+  - Better than perimeter defence
+  - needs more compute, network infra
+  - Network is assumed hostile
+  - External/Internal threats exist all the time
+  - Network locality is not enough trust
+  - Everything is authenticated and authorized
+  - Dynamic Policies
+  - Control Plane
+    - direct and control data flow
+    - like Software-defined networking
+
+Threat Models
+  - Oppurtunistic
+  - Targeted 
+  - Insider
+  - Trusted Insider
+  - State-level
+
+How to identify Endpoints as secure
+  - strong authent
+  - PKI
+  - Digital Certs
+  - Least privilege 
+
+A better way:
+  - network agents
+    - combine user, device apps and activities into one category
+    - give the network agent a trust score
+      - agent, user trust scores
+      - user role, group, residence, authen method
+      - Device trust score, manufacturer, current location 
+      - TPM manufacturuer, version
+    - combine with policy to generate authorization for interaction
+
+Authorization Architecture
+  - enforcement    (data plane)
+    - handles new requests, enforces requests
+  - policy engine  (control plane)
+    - decides whether to accept request
+    - based on network services, endpoint access and user roles
+  - trust engine   (control plane)
+    - risk analysis of request (numeric value)
+  - data stores    (control plane)
+    - data stores (inventory, AAA database etc)
+
