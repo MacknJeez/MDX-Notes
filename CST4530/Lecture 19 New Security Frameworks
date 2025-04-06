@@ -50,7 +50,7 @@ NAT
   - Slows down checksum calc (IPV4 header is changed by NATing)
 
 
-Targeted Security Models
+Targeted Security Models (uses Y-Comm framework)
   - How the system is being used
   - infra can perform safely and securly
   - Three types:
