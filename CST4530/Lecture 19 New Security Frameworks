@@ -9,10 +9,34 @@ Firesmith Framework:
 - Recovery 
 - Prosecution
 
+
 Firesmith Framework
   - never fully implemented
   - new tech needed (eg. blockchain)
 
+Perimeter Defence Framework (can be bad internal defence but godly outer defence)
+  - Firewalls (packet, circuit-proxy, stateful, app-proxy)
+  - Weaker than having defence at every step (Digital Security By Design)
+  - DDoS can still smack it's ass
+  - Y-Comm is better (has DSBD)
+
+Y-Comm Framework (the framework looks like a Y, Communication)
+  - Improvement over Perimeter Defence
+  - Deals with heterogenous networks (4G, 5G, Wifi, Ethernet etc)
+  - SAS (Security and Applicatin Security) ----------------------------- Used more often 
+    - for applications and deploying services
+    - AAACs, ACLs, User-based security
+  - QoSS (Quality of Service Security) (aka QBS)
+    - look at QoS issues
+    - SLAs, DOS and DDOS attack security 
+  - NTS (Network Transport Security) ------------------------------------ Used more often 
+    - deals with E2E transport of data in Y-Comm
+    - Layer 5 (APSTNDP) so that's network layer
+    - NAT, IPSec, VPNs
+  - NAS (Network Architecture Security)
+    - concerned with deployment of architecture 
+    - encryption algos
+    - enforce sec and QoS at device level
 
 Early Internet
   - ARPANET (1969)
@@ -20,16 +44,100 @@ Early Internet
   - telnet,email,FTP came after
   - John Postel managed IP alloc (IANA)
 
-
-
-Perimeter Defence (can be bad internal defence but godly outer defence)
-  - Firewalls (packet, circuit-proxy, stateful, app-proxy)
-  - Weaker than having defence at every step (Digital Security By Design)
-  - DDoS can still smack it's ass
-  - Y-Comm is better (has DSBD)
-
 NAT
   - Reduces attack surface of local network (machines that need global address have them)
   - Servers aren't communicating with real end client (only with NAT firewall translator thingy)
   - Slows down checksum calc (IPV4 header is changed by NATing)
+
+
+Targeted Security Models
+  - How the system is being used
+  - infra can perform safely and securly
+  - Three types:
+    - Connection TSM
+      - Server is started 
+      - QBSserver to QBScore for SLAs etc
+      - Mobile node is started, NASmobile contacts NAScore 
+      - QBSmobile  checks with QBScore for wireless infra access
+      - NTSmobile contacts NTScore for connection to server
+      - NTScore to NTSserver to say call is coming, checks security detail of client and of connection
+    - Ring-based TSM (think of scopes as rings, 00 on the innermost, 11 on the outermost)
+      - Usually for servers
+      - Services classified using scope
+        - Local machine (file systems) 00
+        - Local Network services       01
+        - Domain Services              10
+        - Global Services              11
+      - Scope of server must be decided when started
+    - Vertical Handover TSM
+      - Mobile networks
+      - In some mobile networks, handover is controlled by client
+        - client can abuse by asking for more resources than needed
+      - Steps for Vertical handover TSM
+        - QBS of mobile network cotacts QSB of potential target
+        - Request passed to QBScore
+        - QoS brokers
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
