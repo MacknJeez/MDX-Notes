@@ -77,5 +77,8 @@ RTA(config) #access-list 199 permit tcp 10.101.117.32 0.0.0.15 10.101.117.0 0.0.
 RTA(config) #access-list 199 permit icmp any any
 RTA(config) #interface gigabitethernet 0/2 
 RTA(config-if) #ip access-group 199 out
-
+How was PCA able to bypass access list 199 and Telnet to SWC?
+Two steps were used: First, PCA used Telnet to access SWB. From SWB, Telnet was allowed to SWC.
+What could have been done to prevent PCA from accessing SWC indirectly, while allowing PCB Telnet access to SWC?
+Access list 199 should have been written to deny Telnet traffic from the 10.101.117.48 /29 network while permitting ICMP. It should have been placed on G0/0 of RTA.
 
